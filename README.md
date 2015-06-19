@@ -12,3 +12,6 @@ The functionalities of this application are:
 	- Send a message to the user
 	- Logoff the user
 
+
+This project uses the Cassia .NET library.
+Cassia is a .NET Windows Terminal Services library that uses the MIT License and can be found at https://code.google.com/p/cassia/
