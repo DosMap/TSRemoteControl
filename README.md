@@ -14,4 +14,4 @@ The functionalities of this application are:
 
 
 This project uses the Cassia .NET library.
-Cassia is a .NET Windows Terminal Services library that uses the MIT License and can be found at https://code.google.com/p/cassia/
+Cassia is a .NET Windows Terminal Services library that uses the MIT License and can be found at https://code.google.com/p/cassia/ or at https://github.com/gunmetal313/cassia
