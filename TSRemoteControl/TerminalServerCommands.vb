@@ -94,19 +94,53 @@
     End Function
 
 
-    Public Shared Function sendMessageToUser(ByVal tsName As String, userId As Integer, messageText As String, messageSender As String) As Boolean
+    Public Shared Function sendMessageToUser(userLists As Dictionary(Of String, List(Of Integer)), messageText As String, messageSender As String) As Boolean
         Dim retVal As Boolean
 
         Try
             Dim manager As Cassia.ITerminalServicesManager = New Cassia.TerminalServicesManager()
-            Using server As Cassia.ITerminalServer = manager.GetRemoteServer(tsName)
-                server.Open()
 
-                server.GetSession(userId).MessageBox(messageText, messageSender)
+            For Each tsUserList In userLists.AsEnumerable()
 
-                server.Close()
-            End Using
-            retVal = True
+                Using server As Cassia.ITerminalServer = manager.GetRemoteServer(tsUserList.Key)
+                    server.Open()
+
+                    For Each user In tsUserList.Value
+                        server.GetSession(user).MessageBox(messageText, messageSender)
+                    Next
+
+                    server.Close()
+                End Using
+            Next
+
+        Catch ex As Exception
+            retVal = False
+        End Try
+
+        Return retVal
+    End Function
+
+    Public Shared Function sendMessageToUser(ByVal tsName As String, userId As Integer, messageText As String, messageSender As String) As Boolean
+        Dim retVal As Boolean
+
+        Try
+            Dim tmpDicList As New Dictionary(Of String, List(Of Integer))
+            Dim tmpList As New List(Of Integer)
+            tmpList.Add(userId)
+            tmpDicList.Add(tsName, tmpList)
+
+            Return sendMessageToUser(tmpDicList, messageText, messageSender)
+
+
+            'Dim manager As Cassia.ITerminalServicesManager = New Cassia.TerminalServicesManager()
+            'Using server As Cassia.ITerminalServer = manager.GetRemoteServer(tsName)
+            '    server.Open()
+
+            '    server.GetSession(userId).MessageBox(messageText, messageSender)
+
+            '    server.Close()
+            'End Using
+            'retVal = True
         Catch ex As Exception
             retVal = False
         End Try

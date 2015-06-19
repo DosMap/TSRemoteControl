@@ -340,12 +340,13 @@
                                                                      dlg.Message,
                                                                      dlg.Sender)
                         Else
-                            For Each r In dgwUsers.Rows
-                                TerminalServerCommands.sendMessageToUser(r.Cells("TSName").Value,
-                                                                         r.Cells("UserId").Value,
-                                                                         dlg.Message,
-                                                                         dlg.Sender)
-                            Next
+                            sendMessageToAllUsers(UsersData, dlg.Message, dlg.Sender)
+                            'For Each r In dgwUsers.Rows
+                            '    TerminalServerCommands.sendMessageToUser(r.Cells("TSName").Value,
+                            '                                             r.Cells("UserId").Value,
+                            '                                             dlg.Message,
+                            '                                             dlg.Sender)
+                            'Next
                         End If
                     End If
                 End Using
@@ -353,6 +354,29 @@
         End Select
 
     End Sub
+
+    Private Function sendMessageToAllUsers(data As dsetUsers, messageText As String, messageSender As String) As Boolean
+        Dim tmpDicList As New Dictionary(Of String, List(Of Integer))
+        Dim retVal As Boolean
+
+        Try
+            'Get each Terminal server with at least an entry in our list of users
+            Dim terminalServerList = (From t In data.Users
+                                     Select t.TSName).Distinct().ToList()
+
+            For Each terminal In terminalServerList
+                Dim listOfUsers = (From u In data.Users
+                                 Select u.UserId).ToList()
+                tmpDicList.Add(terminal, listOfUsers)
+            Next
+
+            retVal = TerminalServerCommands.sendMessageToUser(tmpDicList, messageText, messageSender)
+        Catch ex As Exception
+            retVal = False
+        End Try
+       
+        Return retVal
+    End Function
 
 #End Region
 
