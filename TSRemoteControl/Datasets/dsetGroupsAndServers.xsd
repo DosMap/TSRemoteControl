@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsetGroupsAndServers" targetNamespace="http://tempuri.org/dsetGroupsAndServers.xsd" xmlns:mstns="http://tempuri.org/dsetGroupsAndServers.xsd" xmlns="http://tempuri.org/dsetGroupsAndServers.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsetGroupsAndServers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsetGroupsAndServers" msprop:Generator_UserDSName="dsetGroupsAndServers">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="groups" msprop:Generator_TableClassName="groupsDataTable" msprop:Generator_TableVarName="tablegroups" msprop:Generator_RowChangedName="groupsRowChanged" msprop:Generator_TablePropName="groups" msprop:Generator_RowDeletingName="groupsRowDeleting" msprop:Generator_RowChangingName="groupsRowChanging" msprop:Generator_RowEvHandlerName="groupsRowChangeEventHandler" msprop:Generator_RowDeletedName="groupsRowDeleted" msprop:Generator_RowClassName="groupsRow" msprop:Generator_UserTableName="groups" msprop:Generator_RowEvArgName="groupsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="groupId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columngroupId" msprop:Generator_ColumnPropNameInRow="groupId" msprop:Generator_ColumnPropNameInTable="groupIdColumn" msprop:Generator_UserColumnName="groupId" type="xs:string" />
+              <xs:element name="groupName" msprop:Generator_ColumnVarNameInTable="columngroupName" msprop:Generator_ColumnPropNameInRow="groupName" msprop:Generator_ColumnPropNameInTable="groupNameColumn" msprop:Generator_UserColumnName="groupName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="servers" msprop:Generator_TableClassName="serversDataTable" msprop:Generator_TableVarName="tableservers" msprop:Generator_RowChangedName="serversRowChanged" msprop:Generator_TablePropName="servers" msprop:Generator_RowDeletingName="serversRowDeleting" msprop:Generator_RowChangingName="serversRowChanging" msprop:Generator_RowEvHandlerName="serversRowChangeEventHandler" msprop:Generator_RowDeletedName="serversRowDeleted" msprop:Generator_RowClassName="serversRow" msprop:Generator_UserTableName="servers" msprop:Generator_RowEvArgName="serversRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="groupId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columngroupId" msprop:Generator_ColumnPropNameInRow="groupId" msprop:Generator_ColumnPropNameInTable="groupIdColumn" msprop:Generator_UserColumnName="groupId" type="xs:string" minOccurs="0" />
+              <xs:element name="serverId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnserverId" msprop:Generator_ColumnPropNameInRow="serverId" msprop:Generator_ColumnPropNameInTable="serverIdColumn" msprop:Generator_UserColumnName="serverId" type="xs:string" />
+              <xs:element name="serverName" msprop:Generator_ColumnVarNameInTable="columnserverName" msprop:Generator_ColumnPropNameInRow="serverName" msprop:Generator_ColumnPropNameInTable="serverNameColumn" msprop:Generator_UserColumnName="serverName" type="xs:string" minOccurs="0" />
+              <xs:element name="serverDisplayName" msprop:Generator_ColumnVarNameInTable="columnserverDisplayName" msprop:Generator_ColumnPropNameInRow="serverDisplayName" msprop:Generator_ColumnPropNameInTable="serverDisplayNameColumn" msprop:Generator_UserColumnName="serverDisplayName" type="xs:string" minOccurs="0" />
+              <xs:element name="DoNotTouch" msprop:Generator_ColumnVarNameInTable="columnDoNotTouch" msprop:Generator_ColumnPropNameInRow="DoNotTouch" msprop:Generator_ColumnPropNameInTable="DoNotTouchColumn" msprop:Generator_UserColumnName="DoNotTouch" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="groupsKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:groups" />
+      <xs:field xpath="mstns:groupId" />
+    </xs:unique>
+    <xs:unique name="serversKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:servers" />
+      <xs:field xpath="mstns:serverId" />
+    </xs:unique>
+    <xs:keyref name="FK_groups_servers" refer="groupsKey1" msprop:rel_Generator_UserChildTable="servers" msprop:rel_Generator_ChildPropName="GetserversRows" msprop:rel_Generator_UserRelationName="FK_groups_servers" msprop:rel_Generator_RelationVarName="relationFK_groups_servers" msprop:rel_Generator_UserParentTable="groups" msprop:rel_Generator_ParentPropName="groupsRow">
+      <xs:selector xpath=".//mstns:servers" />
+      <xs:field xpath="mstns:groupId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
