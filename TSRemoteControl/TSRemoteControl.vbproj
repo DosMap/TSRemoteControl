@@ -236,6 +236,7 @@
     <Content Include="Images\screen.png" />
     <Content Include="Images\screen32.png" />
     <Content Include="Images\screen64.png" />
+    <Content Include="LICENSE.txt" />
     <Content Include="README.TXT" />
   </ItemGroup>
   <ItemGroup />
