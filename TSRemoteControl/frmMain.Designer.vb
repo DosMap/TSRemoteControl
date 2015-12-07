@@ -48,7 +48,7 @@ Partial Class frmMain
         Me.colServerEdit = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.colServerDelete = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.bindingServersByGroup = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.panelTopServers = New System.Windows.Forms.Panel()
         Me.lblDetailTS = New System.Windows.Forms.Label()
         Me.btnAddServer = New System.Windows.Forms.Button()
         Me.panelRight = New System.Windows.Forms.Panel()
@@ -70,12 +70,12 @@ Partial Class frmMain
         Me.timerUserRefresh = New System.Windows.Forms.Timer(Me.components)
         Me.bgWorker = New System.ComponentModel.BackgroundWorker()
         Me.colConnect = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.TSNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TSName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.UserNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserIdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserStateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PCNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.contentContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.contentContainer.Panel1.SuspendLayout()
@@ -94,7 +94,7 @@ Partial Class frmMain
         Me.bottomLeftPanel.SuspendLayout()
         CType(Me.dgwServers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bindingServersByGroup, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.panelTopServers.SuspendLayout()
         Me.panelRight.SuspendLayout()
         CType(Me.dgwUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bindingUsers, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -263,7 +263,7 @@ Partial Class frmMain
         'bottomLeftPanel
         '
         Me.bottomLeftPanel.Controls.Add(Me.dgwServers)
-        Me.bottomLeftPanel.Controls.Add(Me.Panel1)
+        Me.bottomLeftPanel.Controls.Add(Me.panelTopServers)
         Me.bottomLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bottomLeftPanel.Location = New System.Drawing.Point(0, 0)
         Me.bottomLeftPanel.Name = "bottomLeftPanel"
@@ -352,15 +352,15 @@ Partial Class frmMain
         Me.bindingServersByGroup.DataSource = Me.GroupsAndServersData
         Me.bindingServersByGroup.Sort = "serverDisplayName"
         '
-        'Panel1
+        'panelTopServers
         '
-        Me.Panel1.Controls.Add(Me.lblDetailTS)
-        Me.Panel1.Controls.Add(Me.btnAddServer)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(348, 32)
-        Me.Panel1.TabIndex = 5
+        Me.panelTopServers.Controls.Add(Me.lblDetailTS)
+        Me.panelTopServers.Controls.Add(Me.btnAddServer)
+        Me.panelTopServers.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelTopServers.Location = New System.Drawing.Point(0, 0)
+        Me.panelTopServers.Name = "panelTopServers"
+        Me.panelTopServers.Size = New System.Drawing.Size(348, 32)
+        Me.panelTopServers.TabIndex = 5
         '
         'lblDetailTS
         '
@@ -406,7 +406,7 @@ Partial Class frmMain
         Me.dgwUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgwUsers.BackgroundColor = System.Drawing.Color.White
         Me.dgwUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgwUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colConnect, Me.TSNameDataGridViewTextBoxColumn, Me.colMessage, Me.UserNameDataGridViewTextBoxColumn, Me.UserIdDataGridViewTextBoxColumn, Me.UserStateDataGridViewTextBoxColumn, Me.PCNameDataGridViewTextBoxColumn, Me.colCloseSession})
+        Me.dgwUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colConnect, Me.TSName, Me.colMessage, Me.UserName, Me.UserId, Me.UserState, Me.PCName, Me.colCloseSession})
         Me.dgwUsers.DataSource = Me.bindingUsers
         Me.dgwUsers.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgwUsers.Location = New System.Drawing.Point(0, 64)
@@ -548,12 +548,12 @@ Partial Class frmMain
         Me.colConnect.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.colConnect.Width = 32
         '
-        'TSNameDataGridViewTextBoxColumn
+        'TSName
         '
-        Me.TSNameDataGridViewTextBoxColumn.DataPropertyName = "TSName"
-        Me.TSNameDataGridViewTextBoxColumn.HeaderText = "Server"
-        Me.TSNameDataGridViewTextBoxColumn.Name = "TSNameDataGridViewTextBoxColumn"
-        Me.TSNameDataGridViewTextBoxColumn.ReadOnly = True
+        Me.TSName.DataPropertyName = "TSName"
+        Me.TSName.HeaderText = "Server"
+        Me.TSName.Name = "TSName"
+        Me.TSName.ReadOnly = True
         '
         'colMessage
         '
@@ -565,33 +565,33 @@ Partial Class frmMain
         Me.colMessage.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.colMessage.Width = 32
         '
-        'UserNameDataGridViewTextBoxColumn
+        'UserName
         '
-        Me.UserNameDataGridViewTextBoxColumn.DataPropertyName = "UserName"
-        Me.UserNameDataGridViewTextBoxColumn.HeaderText = "User"
-        Me.UserNameDataGridViewTextBoxColumn.Name = "UserNameDataGridViewTextBoxColumn"
-        Me.UserNameDataGridViewTextBoxColumn.ReadOnly = True
+        Me.UserName.DataPropertyName = "UserName"
+        Me.UserName.HeaderText = "User"
+        Me.UserName.Name = "UserName"
+        Me.UserName.ReadOnly = True
         '
-        'UserIdDataGridViewTextBoxColumn
+        'UserId
         '
-        Me.UserIdDataGridViewTextBoxColumn.DataPropertyName = "UserId"
-        Me.UserIdDataGridViewTextBoxColumn.HeaderText = "User ID"
-        Me.UserIdDataGridViewTextBoxColumn.Name = "UserIdDataGridViewTextBoxColumn"
-        Me.UserIdDataGridViewTextBoxColumn.ReadOnly = True
+        Me.UserId.DataPropertyName = "UserId"
+        Me.UserId.HeaderText = "User ID"
+        Me.UserId.Name = "UserId"
+        Me.UserId.ReadOnly = True
         '
-        'UserStateDataGridViewTextBoxColumn
+        'UserState
         '
-        Me.UserStateDataGridViewTextBoxColumn.DataPropertyName = "UserState"
-        Me.UserStateDataGridViewTextBoxColumn.HeaderText = "Connection state"
-        Me.UserStateDataGridViewTextBoxColumn.Name = "UserStateDataGridViewTextBoxColumn"
-        Me.UserStateDataGridViewTextBoxColumn.ReadOnly = True
+        Me.UserState.DataPropertyName = "UserState"
+        Me.UserState.HeaderText = "Connection state"
+        Me.UserState.Name = "UserState"
+        Me.UserState.ReadOnly = True
         '
-        'PCNameDataGridViewTextBoxColumn
+        'PCName
         '
-        Me.PCNameDataGridViewTextBoxColumn.DataPropertyName = "PCName"
-        Me.PCNameDataGridViewTextBoxColumn.HeaderText = "Client PC"
-        Me.PCNameDataGridViewTextBoxColumn.Name = "PCNameDataGridViewTextBoxColumn"
-        Me.PCNameDataGridViewTextBoxColumn.ReadOnly = True
+        Me.PCName.DataPropertyName = "PCName"
+        Me.PCName.HeaderText = "Client PC"
+        Me.PCName.Name = "PCName"
+        Me.PCName.ReadOnly = True
         '
         'colCloseSession
         '
@@ -631,7 +631,7 @@ Partial Class frmMain
         Me.bottomLeftPanel.ResumeLayout(False)
         CType(Me.dgwServers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.bindingServersByGroup, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
+        Me.panelTopServers.ResumeLayout(False)
         Me.panelRight.ResumeLayout(False)
         Me.panelRight.PerformLayout()
         CType(Me.dgwUsers, System.ComponentModel.ISupportInitialize).EndInit()
@@ -665,7 +665,7 @@ Partial Class frmMain
     Friend WithEvents GroupNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colEdit As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents colDelete As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents panelTopServers As System.Windows.Forms.Panel
     Friend WithEvents lblDetailTS As System.Windows.Forms.Label
     Friend WithEvents btnAddServer As System.Windows.Forms.Button
     Friend WithEvents dgwUsers As System.Windows.Forms.DataGridView
@@ -691,11 +691,11 @@ Partial Class frmMain
     Friend WithEvents txtFilter As TextBox
     Friend WithEvents lblUserFilter As Label
     Friend WithEvents colConnect As DataGridViewButtonColumn
-    Friend WithEvents TSNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TSName As DataGridViewTextBoxColumn
     Friend WithEvents colMessage As DataGridViewButtonColumn
-    Friend WithEvents UserNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents UserIdDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents UserStateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PCNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents UserName As DataGridViewTextBoxColumn
+    Friend WithEvents UserId As DataGridViewTextBoxColumn
+    Friend WithEvents UserState As DataGridViewTextBoxColumn
+    Friend WithEvents PCName As DataGridViewTextBoxColumn
     Friend WithEvents colCloseSession As DataGridViewButtonColumn
 End Class
