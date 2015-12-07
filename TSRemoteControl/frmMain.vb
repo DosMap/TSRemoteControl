@@ -5,17 +5,21 @@
     Private Const GROUP_EDIT_CELL As Integer = 2
     Private Const GROUP_DELETE_CELL As Integer = 3
 
-    Private Const SERVER_GROUPID_CELL As Integer = 0
-    Private Const SERVER_ID_CELL As Integer = 1
-    Private Const SERVER_NAME_CELL As Integer = 2
-    Private Const SERVER_EDIT_CELL As Integer = 4
-    Private Const SERVER_DELETE_CELL As Integer = 5
+    Private Const SERVER_GETUSERS_CELL As Integer = 0
+    Private Const SERVER_GROUPID_CELL As Integer = 1
+    Private Const SERVER_ID_CELL As Integer = 2
+    Private Const SERVER_NAME_CELL As Integer = 3
+    Private Const SERVER_EDIT_CELL As Integer = 5
+    Private Const SERVER_DELETE_CELL As Integer = 6
 
     Private Const USER_CONNECT_CELL As Integer = 0
     Private Const USER_CLOSE_SESSION As Integer = 7
     Private Const USER_MESSAGE As Integer = 2
 
     Private mUserList As List(Of UserInfo)
+
+    Private mActiveGroup As System.Guid
+    Private mActiveServer As String
 
     Public Sub New()
 
@@ -28,6 +32,17 @@
 
 #Region "Groups Grid"
 
+    Private Function RefreshGroupFilter()
+        Dim retVal As Boolean = True
+        Try
+            bindingServersByGroup.Filter = String.Format("groupId='{0}'",
+                                                         CType(GroupsBindingSource.Current.row, dsetGroupsAndServers.groupsRow).groupId)
+        Catch ex As Exception
+            retVal = False
+        End Try
+        Return retVal
+    End Function
+
     Private Sub dgwGroups_RowValidating(sender As Object, e As DataGridViewCellCancelEventArgs) Handles dgwGroups.RowValidating
         'If the row We are editing does not have an Id, stablish one.
         If dgwGroups.Rows(e.RowIndex).Cells(GROUP_ID_CELL).Value Is Nothing _
@@ -39,8 +54,7 @@
     Private Sub dgwGroups_SelectionChanged(sender As Object, e As EventArgs) Handles dgwGroups.SelectionChanged
         'Set the filter of the server binding to show only the servers in the selected group
         If dgwGroups.SelectedRows.Count > 0 Then
-            bindingServersByGroup.Filter = String.Format("groupId='{0}'",
-                                                         CType(GroupsBindingSource.Current.row, dsetGroupsAndServers.groupsRow).groupId)
+            RefreshGroupFilter()
         End If
     End Sub
 
@@ -78,8 +92,8 @@
                 Case GROUP_DELETE_CELL
                     'Check if the group we are trying to delete has servers.
                     Dim numberOfServersInGroup = (From g In GroupsAndServersData.servers
-                                                 Where g.groupId = dgwGroups.Rows(e.RowIndex).Cells(GROUP_ID_CELL).Value
-                                                 Select g.serverId).Count
+                                                  Where g.groupId = dgwGroups.Rows(e.RowIndex).Cells(GROUP_ID_CELL).Value
+                                                  Select g.serverId).Count
                     If numberOfServersInGroup > 1 Then
                         'The group has servers, ask the user if he really want to delete this group
                         If MsgBox("The group you're trying to delete has servers. Do you want to continue and delete the group?",
@@ -105,7 +119,6 @@
                     End If
 
             End Select
-
         End If
     End Sub
 
@@ -114,10 +127,12 @@
 #Region "Servers Grid"
 
     Private Sub dgwServers_CellPainting(sender As Object, e As DataGridViewCellPaintingEventArgs) Handles dgwServers.CellPainting
-        If e.ColumnIndex = SERVER_EDIT_CELL OrElse e.ColumnIndex = SERVER_DELETE_CELL AndAlso e.RowIndex >= 0 Then
+        If e.ColumnIndex = SERVER_EDIT_CELL OrElse e.ColumnIndex = SERVER_DELETE_CELL OrElse e.ColumnIndex = SERVER_GETUSERS_CELL AndAlso e.RowIndex >= 0 Then
             e.Paint(e.CellBounds, DataGridViewPaintParts.All)
             Dim img As Image = Nothing
             Select Case e.ColumnIndex
+                Case SERVER_GETUSERS_CELL
+                    img = CType(My.Resources.images.screen32, Image)
                 Case SERVER_EDIT_CELL
                     img = CType(My.Resources.images.edit32, Image)
                 Case SERVER_DELETE_CELL
@@ -133,7 +148,7 @@
     End Sub
 
     Private Sub dgwServers_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgwServers.CellClick
-        If e.ColumnIndex = SERVER_EDIT_CELL OrElse e.ColumnIndex = SERVER_DELETE_CELL AndAlso e.RowIndex >= 0 Then
+        If e.ColumnIndex = SERVER_EDIT_CELL OrElse e.ColumnIndex = SERVER_DELETE_CELL OrElse e.ColumnIndex = SERVER_GETUSERS_CELL AndAlso e.RowIndex >= 0 Then
             Select Case e.ColumnIndex
                 Case SERVER_EDIT_CELL
                     Dim sId = dgwServers.Rows(e.RowIndex).Cells(SERVER_ID_CELL).Value
@@ -152,133 +167,17 @@
                     If Not serverRow.DoNotTouch Then
                         serverRow.Delete()
                     End If
+                Case SERVER_GETUSERS_CELL
+                    mActiveGroup = dgwServers.Rows(e.RowIndex).Cells(SERVER_GROUPID_CELL).Value
+                    mActiveServer = dgwServers.Rows(e.RowIndex).Cells(SERVER_NAME_CELL).Value
+                    RefreshUsers()
             End Select
         End If
-    End Sub
-
-    Private Sub dgwServers_SelectionChanged(sender As Object, e As EventArgs) Handles dgwServers.SelectionChanged
-        refreshUsers()
     End Sub
 
 #End Region
 
 #Region "Users Grid"
-
-    Private Sub initializeUsersGrid()
-
-        dgwUsers.AutoGenerateColumns = False
-        dgwUsers.DataSource = UsersData.Users
-
-
-        Dim colConnect As New DataGridViewButtonColumn()
-        colConnect.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
-        'colConnect.DataPropertyName = "UserState"
-        colConnect.DisplayIndex = 0
-        colConnect.HeaderText = ""
-        colConnect.MinimumWidth = 32
-        colConnect.Width = 32
-        colConnect.Name = "colConnect"
-        colConnect.Resizable = DataGridViewTriState.False
-        colConnect.Visible = True
-        colConnect.ReadOnly = True
-        colConnect.ToolTipText = "Connect to user session"
-        dgwUsers.Columns.Add(colConnect)
-
-        Dim colTSName As New DataGridViewTextBoxColumn()
-        colTSName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        colTSName.DataPropertyName = "TSName"
-        colTSName.DisplayIndex = 1
-        colTSName.HeaderText = "Server"
-        colTSName.Width = 100
-        colTSName.Name = "TSName"
-        colTSName.Resizable = DataGridViewTriState.False
-        colTSName.Visible = True
-        colTSName.ReadOnly = True
-        colTSName.SortMode = DataGridViewColumnSortMode.Automatic
-        dgwUsers.Columns.Add(colTSName)
-
-        Dim colMessage As New DataGridViewButtonColumn()
-        colMessage.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
-        colMessage.DisplayIndex = 2
-        colMessage.HeaderText = ""
-        colMessage.MinimumWidth = 32
-        colMessage.Width = 32
-        colMessage.Name = "colMessage"
-        colMessage.Resizable = DataGridViewTriState.False
-        colMessage.Visible = True
-        colMessage.ReadOnly = True
-        colMessage.ToolTipText = "Send a message to user"
-        dgwUsers.Columns.Add(colMessage)
-
-        Dim colTSUser As New DataGridViewTextBoxColumn()
-        colTSUser.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        colTSUser.DataPropertyName = "UserName"
-        colTSUser.DisplayIndex = 3
-        colTSUser.HeaderText = "User"
-        colTSUser.Width = 100
-        colTSUser.Name = "UserName"
-        colTSUser.Resizable = DataGridViewTriState.False
-        colTSUser.Visible = True
-        colTSUser.ReadOnly = True
-        colTSUser.SortMode = DataGridViewColumnSortMode.Automatic
-        dgwUsers.Columns.Add(colTSUser)
-
-        Dim colTSUserId As New DataGridViewTextBoxColumn()
-        colTSUserId.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
-        colTSUserId.DataPropertyName = "UserId"
-        colTSUserId.DisplayIndex = 4
-        colTSUserId.HeaderText = "User ID"
-        colTSUserId.MinimumWidth = 100
-        colTSUserId.Width = 100
-        colTSUserId.Name = "UserId"
-        colTSUserId.Resizable = DataGridViewTriState.False
-        colTSUserId.Visible = True
-        colTSUserId.ReadOnly = True
-        colTSUserId.SortMode = DataGridViewColumnSortMode.Automatic
-        dgwUsers.Columns.Add(colTSUserId)
-
-        Dim colPCName As New DataGridViewTextBoxColumn()
-        colPCName.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
-        colPCName.DataPropertyName = "PCName"
-        colPCName.DisplayIndex = 5
-        colPCName.HeaderText = "Client PC"
-        colPCName.MinimumWidth = 100
-        colPCName.Width = 100
-        colPCName.Name = "PCName"
-        colPCName.Resizable = DataGridViewTriState.False
-        colPCName.Visible = True
-        colPCName.ReadOnly = True
-        colPCName.SortMode = DataGridViewColumnSortMode.Automatic
-        dgwUsers.Columns.Add(colPCName)
-
-        Dim colUserState As New DataGridViewTextBoxColumn()
-        colUserState.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
-        colUserState.DataPropertyName = "UserState"
-        colUserState.DisplayIndex = 6
-        colUserState.HeaderText = "State"
-        colUserState.MinimumWidth = 100
-        colUserState.Width = 100
-        colUserState.Name = "UserState"
-        colUserState.Resizable = DataGridViewTriState.False
-        colUserState.Visible = True
-        colUserState.ReadOnly = True
-        colUserState.SortMode = DataGridViewColumnSortMode.Automatic
-        dgwUsers.Columns.Add(colUserState)
-
-        Dim colCloseSession As New DataGridViewButtonColumn()
-        colCloseSession.AutoSizeMode = DataGridViewAutoSizeColumnMode.None
-        colCloseSession.DisplayIndex = 7
-        colCloseSession.HeaderText = ""
-        colCloseSession.MinimumWidth = 32
-        colCloseSession.Width = 32
-        colCloseSession.Name = "colCloseSession"
-        colCloseSession.Resizable = DataGridViewTriState.False
-        colCloseSession.Visible = True
-        colCloseSession.ReadOnly = True
-        colCloseSession.ToolTipText = "Close user session"
-        dgwUsers.Columns.Add(colCloseSession)
-
-    End Sub
 
     Private Sub dgwUsers_CellPainting(sender As Object, e As DataGridViewCellPaintingEventArgs) Handles dgwUsers.CellPainting
         If e.ColumnIndex = USER_CONNECT_CELL AndAlso e.RowIndex >= 0 Then
@@ -329,7 +228,7 @@
                 If TerminalServerCommands.closeUserSession(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
                                                         dgwUsers.Rows(e.RowIndex).Cells("UserId").Value) Then
                     MsgBox("Session terminated", MsgBoxStyle.OkOnly Or MsgBoxStyle.Information, "Message")
-                    refreshUsers()
+                    RefreshUsers()
                 End If
             Case USER_MESSAGE
                 Using dlg As New dlgMessage()
@@ -415,32 +314,83 @@
             GroupsAndServersData.ReadXml(My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\TSRemoteControl.config")
         End If
 
-        initializeUsersGrid()
+        mActiveGroup = System.Guid.Empty
+        mActiveServer = String.Empty
+
     End Sub
 
     Private Sub timerUserRefresh_Tick(sender As Object, e As EventArgs) Handles timerUserRefresh.Tick
-        refreshUsers()
-    End Sub
-
-    Private Sub refreshUsers()
-        For Each r In dgwServers.SelectedRows
-            If Not mUserList Is Nothing Then
-                mUserList.Clear()
-            End If
-            mUserList = TerminalServerCommands.getActiveUsers(GroupsAndServersData,
-                                                              r.cells(SERVER_GROUPID_CELL).VALUE,
-                                                              r.cells(SERVER_NAME_CELL).value)
-
-            UsersData.Clear()
-            For Each user In mUserList
-                UsersData.Users.AddUsersRow(user.TSName, user.UserName, user.UserId, user.UserState, user.PCName)
-            Next
-            'dgwUsers.DataSource = mUserList
-        Next
+        RefreshUsers()
     End Sub
 
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
-        refreshUsers()
+        RefreshUsers()
     End Sub
+
+#Region "Code for the Backgroundworker that fetches the connected users"
+
+    Private Sub RefreshUsers()
+        If Not bgWorker.IsBusy Then
+            userStatusLabel.Text = "Refreshing user list ..."
+
+            userRefreshProgessBar.Value = 0
+            userRefreshProgessBar.Visible = True
+            userRefreshCancelButton.Visible = True
+            dgwUsers.Cursor = Cursors.WaitCursor
+
+            UsersData.Clear()
+
+            bgWorker.RunWorkerAsync()
+        End If
+    End Sub
+
+    Private Sub bgWorker_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles bgWorker.DoWork
+
+        Try
+            If Not mUserList Is Nothing Then
+                mUserList.Clear()
+            End If
+
+            'Get the list of connected users
+            mUserList = TerminalServerCommands.getActiveUsers(GroupsAndServersData, mActiveGroup, mActiveServer, bgWorker)
+
+            'Update the list of connected users
+            For Each user In mUserList
+                UsersData.Users.AddUsersRow(user.TSName, user.UserName, user.UserId, user.UserState, user.PCName)
+            Next
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+    Private Sub bgWorker_ProgressChanged(sender As Object, e As System.ComponentModel.ProgressChangedEventArgs) Handles bgWorker.ProgressChanged
+        userRefreshProgessBar.Value = e.ProgressPercentage
+    End Sub
+
+    Private Sub bgWorker_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles bgWorker.RunWorkerCompleted
+        dgwUsers.Refresh()
+        dgwUsers.PerformLayout()
+        userStatusLabel.Text = String.Format("Number of users: {0}", UsersData.Users.Rows.Count)
+        userRefreshProgessBar.Visible = False
+        userRefreshCancelButton.Visible = False
+        dgwUsers.Cursor = Cursors.Default
+
+    End Sub
+
+    Private Sub userRefreshCancelButton_Click(sender As Object, e As EventArgs) Handles userRefreshCancelButton.Click
+        bgWorker.CancelAsync()
+
+    End Sub
+
+    Private Sub txtFilter_TextChanged(sender As Object, e As EventArgs) Handles txtFilter.TextChanged
+        If txtFilter.Text.Trim().Length > 0 Then
+            bindingUsers.Filter = String.Format("UserName like '%{0}%'", txtFilter.Text)
+        Else
+            bindingUsers.Filter = String.Empty
+        End If
+    End Sub
+
+#End Region
 
 End Class
