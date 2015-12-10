@@ -393,4 +393,32 @@
 
 #End Region
 
+#Region "Menu"
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub AboutThisApplicationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutThisApplicationToolStripMenuItem.Click
+        Using dHelp As New dlgAbout()
+            dHelp.ShowDialog()
+        End Using
+    End Sub
+
+    Private Sub ImportServersFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportServersFileToolStripMenuItem.Click
+
+        MsgBox("Not implemented", MsgBoxStyle.Information)
+        'If dlgOpenFile.ShowDialog() = DialogResult.OK Then
+
+        '    'Verify is the file exists
+        '    If System.IO.File.Exists(dlgOpenFile.FileName) Then
+        '        'Validate the file format
+
+        '    End If
+
+        'End If
+    End Sub
+
+#End Region
+
 End Class

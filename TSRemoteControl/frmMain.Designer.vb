@@ -53,6 +53,14 @@ Partial Class frmMain
         Me.btnAddServer = New System.Windows.Forms.Button()
         Me.panelRight = New System.Windows.Forms.Panel()
         Me.dgwUsers = New System.Windows.Forms.DataGridView()
+        Me.colConnect = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TSName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.bindingUsers = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsersData = New TSRemoteControl.dsetUsers()
         Me.panelUsersTop = New System.Windows.Forms.Panel()
@@ -69,14 +77,13 @@ Partial Class frmMain
         Me.toolTipsManager = New System.Windows.Forms.ToolTip(Me.components)
         Me.timerUserRefresh = New System.Windows.Forms.Timer(Me.components)
         Me.bgWorker = New System.ComponentModel.BackgroundWorker()
-        Me.colConnect = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.TSName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.mainMenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImportServersFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutThisApplicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
         CType(Me.contentContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.contentContainer.Panel1.SuspendLayout()
         Me.contentContainer.Panel2.SuspendLayout()
@@ -102,12 +109,13 @@ Partial Class frmMain
         Me.panelUsersTop.SuspendLayout()
         Me.userStatusStrip.SuspendLayout()
         Me.panelRightTop.SuspendLayout()
+        Me.mainMenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'contentContainer
         '
         Me.contentContainer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.contentContainer.Location = New System.Drawing.Point(0, 0)
+        Me.contentContainer.Location = New System.Drawing.Point(0, 24)
         Me.contentContainer.Name = "contentContainer"
         '
         'contentContainer.Panel1
@@ -117,7 +125,7 @@ Partial Class frmMain
         'contentContainer.Panel2
         '
         Me.contentContainer.Panel2.Controls.Add(Me.panelRight)
-        Me.contentContainer.Size = New System.Drawing.Size(1044, 756)
+        Me.contentContainer.Size = New System.Drawing.Size(1044, 732)
         Me.contentContainer.SplitterDistance = 348
         Me.contentContainer.TabIndex = 0
         '
@@ -127,7 +135,7 @@ Partial Class frmMain
         Me.panelLeft.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelLeft.Location = New System.Drawing.Point(0, 0)
         Me.panelLeft.Name = "panelLeft"
-        Me.panelLeft.Size = New System.Drawing.Size(348, 756)
+        Me.panelLeft.Size = New System.Drawing.Size(348, 732)
         Me.panelLeft.TabIndex = 0
         '
         'SplitContainer2
@@ -144,8 +152,8 @@ Partial Class frmMain
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.bottomLeftPanel)
-        Me.SplitContainer2.Size = New System.Drawing.Size(348, 756)
-        Me.SplitContainer2.SplitterDistance = 204
+        Me.SplitContainer2.Size = New System.Drawing.Size(348, 732)
+        Me.SplitContainer2.SplitterDistance = 197
         Me.SplitContainer2.TabIndex = 0
         '
         'topLeftPanel
@@ -155,7 +163,7 @@ Partial Class frmMain
         Me.topLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.topLeftPanel.Location = New System.Drawing.Point(0, 0)
         Me.topLeftPanel.Name = "topLeftPanel"
-        Me.topLeftPanel.Size = New System.Drawing.Size(348, 204)
+        Me.topLeftPanel.Size = New System.Drawing.Size(348, 197)
         Me.topLeftPanel.TabIndex = 0
         '
         'dgwGroups
@@ -178,7 +186,7 @@ Partial Class frmMain
         Me.dgwGroups.ReadOnly = True
         Me.dgwGroups.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgwGroups.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgwGroups.Size = New System.Drawing.Size(348, 172)
+        Me.dgwGroups.Size = New System.Drawing.Size(348, 165)
         Me.dgwGroups.TabIndex = 2
         '
         'GroupIdDataGridViewTextBoxColumn
@@ -230,6 +238,9 @@ Partial Class frmMain
         '
         'tlTopPanel
         '
+        Me.tlTopPanel.BackColor = System.Drawing.SystemColors.Control
+        Me.tlTopPanel.BackgroundImage = CType(resources.GetObject("tlTopPanel.BackgroundImage"), System.Drawing.Image)
+        Me.tlTopPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.tlTopPanel.Controls.Add(Me.lblGroups)
         Me.tlTopPanel.Controls.Add(Me.btnAddGroup)
         Me.tlTopPanel.Dock = System.Windows.Forms.DockStyle.Top
@@ -240,7 +251,10 @@ Partial Class frmMain
         '
         'lblGroups
         '
+        Me.lblGroups.BackColor = System.Drawing.Color.Transparent
         Me.lblGroups.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblGroups.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGroups.ForeColor = System.Drawing.Color.White
         Me.lblGroups.Location = New System.Drawing.Point(0, 0)
         Me.lblGroups.Name = "lblGroups"
         Me.lblGroups.Size = New System.Drawing.Size(316, 32)
@@ -267,7 +281,7 @@ Partial Class frmMain
         Me.bottomLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bottomLeftPanel.Location = New System.Drawing.Point(0, 0)
         Me.bottomLeftPanel.Name = "bottomLeftPanel"
-        Me.bottomLeftPanel.Size = New System.Drawing.Size(348, 548)
+        Me.bottomLeftPanel.Size = New System.Drawing.Size(348, 531)
         Me.bottomLeftPanel.TabIndex = 0
         '
         'dgwServers
@@ -287,7 +301,7 @@ Partial Class frmMain
         Me.dgwServers.ReadOnly = True
         Me.dgwServers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgwServers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgwServers.Size = New System.Drawing.Size(348, 516)
+        Me.dgwServers.Size = New System.Drawing.Size(348, 499)
         Me.dgwServers.TabIndex = 4
         '
         'colGetUsers
@@ -354,6 +368,7 @@ Partial Class frmMain
         '
         'panelTopServers
         '
+        Me.panelTopServers.BackgroundImage = CType(resources.GetObject("panelTopServers.BackgroundImage"), System.Drawing.Image)
         Me.panelTopServers.Controls.Add(Me.lblDetailTS)
         Me.panelTopServers.Controls.Add(Me.btnAddServer)
         Me.panelTopServers.Dock = System.Windows.Forms.DockStyle.Top
@@ -364,7 +379,10 @@ Partial Class frmMain
         '
         'lblDetailTS
         '
+        Me.lblDetailTS.BackColor = System.Drawing.Color.Transparent
         Me.lblDetailTS.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblDetailTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDetailTS.ForeColor = System.Drawing.Color.White
         Me.lblDetailTS.Location = New System.Drawing.Point(0, 0)
         Me.lblDetailTS.Name = "lblDetailTS"
         Me.lblDetailTS.Size = New System.Drawing.Size(316, 32)
@@ -394,7 +412,7 @@ Partial Class frmMain
         Me.panelRight.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelRight.Location = New System.Drawing.Point(0, 0)
         Me.panelRight.Name = "panelRight"
-        Me.panelRight.Size = New System.Drawing.Size(692, 756)
+        Me.panelRight.Size = New System.Drawing.Size(692, 732)
         Me.panelRight.TabIndex = 1
         '
         'dgwUsers
@@ -414,129 +432,8 @@ Partial Class frmMain
         Me.dgwUsers.Name = "dgwUsers"
         Me.dgwUsers.ReadOnly = True
         Me.dgwUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgwUsers.Size = New System.Drawing.Size(692, 670)
+        Me.dgwUsers.Size = New System.Drawing.Size(692, 646)
         Me.dgwUsers.TabIndex = 4
-        '
-        'bindingUsers
-        '
-        Me.bindingUsers.AllowNew = True
-        Me.bindingUsers.DataMember = "Users"
-        Me.bindingUsers.DataSource = Me.UsersData
-        '
-        'UsersData
-        '
-        Me.UsersData.DataSetName = "dsetUsers"
-        Me.UsersData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'panelUsersTop
-        '
-        Me.panelUsersTop.Controls.Add(Me.txtFilter)
-        Me.panelUsersTop.Controls.Add(Me.lblUserFilter)
-        Me.panelUsersTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelUsersTop.Location = New System.Drawing.Point(0, 32)
-        Me.panelUsersTop.Name = "panelUsersTop"
-        Me.panelUsersTop.Size = New System.Drawing.Size(692, 32)
-        Me.panelUsersTop.TabIndex = 8
-        '
-        'txtFilter
-        '
-        Me.txtFilter.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtFilter.Location = New System.Drawing.Point(108, 6)
-        Me.txtFilter.Name = "txtFilter"
-        Me.txtFilter.Size = New System.Drawing.Size(572, 20)
-        Me.txtFilter.TabIndex = 1
-        '
-        'lblUserFilter
-        '
-        Me.lblUserFilter.Location = New System.Drawing.Point(3, 5)
-        Me.lblUserFilter.Name = "lblUserFilter"
-        Me.lblUserFilter.Size = New System.Drawing.Size(99, 23)
-        Me.lblUserFilter.TabIndex = 0
-        Me.lblUserFilter.Text = "User name filter:"
-        Me.lblUserFilter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'userStatusStrip
-        '
-        Me.userStatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.userStatusLabel, Me.userRefreshProgessBar, Me.userRefreshCancelButton})
-        Me.userStatusStrip.Location = New System.Drawing.Point(0, 734)
-        Me.userStatusStrip.Name = "userStatusStrip"
-        Me.userStatusStrip.Size = New System.Drawing.Size(692, 22)
-        Me.userStatusStrip.TabIndex = 7
-        '
-        'userStatusLabel
-        '
-        Me.userStatusLabel.AutoSize = False
-        Me.userStatusLabel.Name = "userStatusLabel"
-        Me.userStatusLabel.Size = New System.Drawing.Size(200, 17)
-        Me.userStatusLabel.Text = "Number of users:"
-        Me.userStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'userRefreshProgessBar
-        '
-        Me.userRefreshProgessBar.Name = "userRefreshProgessBar"
-        Me.userRefreshProgessBar.Size = New System.Drawing.Size(200, 16)
-        '
-        'userRefreshCancelButton
-        '
-        Me.userRefreshCancelButton.IsLink = True
-        Me.userRefreshCancelButton.Name = "userRefreshCancelButton"
-        Me.userRefreshCancelButton.Size = New System.Drawing.Size(147, 17)
-        Me.userRefreshCancelButton.Text = "Click to cancel the process"
-        '
-        'panelRightTop
-        '
-        Me.panelRightTop.Controls.Add(Me.lblUsersPerServer)
-        Me.panelRightTop.Controls.Add(Me.btnRefresh)
-        Me.panelRightTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelRightTop.Location = New System.Drawing.Point(0, 0)
-        Me.panelRightTop.Name = "panelRightTop"
-        Me.panelRightTop.Size = New System.Drawing.Size(692, 32)
-        Me.panelRightTop.TabIndex = 5
-        '
-        'lblUsersPerServer
-        '
-        Me.lblUsersPerServer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblUsersPerServer.Location = New System.Drawing.Point(0, 0)
-        Me.lblUsersPerServer.Name = "lblUsersPerServer"
-        Me.lblUsersPerServer.Size = New System.Drawing.Size(660, 32)
-        Me.lblUsersPerServer.TabIndex = 4
-        Me.lblUsersPerServer.Text = "Users connected to the selected servers"
-        Me.lblUsersPerServer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'btnRefresh
-        '
-        Me.btnRefresh.BackgroundImage = Global.TSRemoteControl.My.Resources.images.refresh32
-        Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnRefresh.Location = New System.Drawing.Point(660, 0)
-        Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(32, 32)
-        Me.btnRefresh.TabIndex = 5
-        Me.toolTipsManager.SetToolTip(Me.btnRefresh, "Refresh users")
-        Me.btnRefresh.UseVisualStyleBackColor = True
-        '
-        'listUsers
-        '
-        Me.listUsers.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.listUsers.Location = New System.Drawing.Point(0, 0)
-        Me.listUsers.Name = "listUsers"
-        Me.listUsers.Size = New System.Drawing.Size(692, 756)
-        Me.listUsers.TabIndex = 2
-        Me.listUsers.UseCompatibleStateImageBehavior = False
-        '
-        'toolTipsManager
-        '
-        Me.toolTipsManager.IsBalloon = True
-        '
-        'timerUserRefresh
-        '
-        Me.timerUserRefresh.Interval = 60000
-        '
-        'bgWorker
-        '
-        Me.bgWorker.WorkerReportsProgress = True
-        Me.bgWorker.WorkerSupportsCancellation = True
         '
         'colConnect
         '
@@ -604,15 +501,187 @@ Partial Class frmMain
         Me.colCloseSession.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.colCloseSession.Width = 32
         '
+        'bindingUsers
+        '
+        Me.bindingUsers.AllowNew = True
+        Me.bindingUsers.DataMember = "Users"
+        Me.bindingUsers.DataSource = Me.UsersData
+        '
+        'UsersData
+        '
+        Me.UsersData.DataSetName = "dsetUsers"
+        Me.UsersData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'panelUsersTop
+        '
+        Me.panelUsersTop.Controls.Add(Me.txtFilter)
+        Me.panelUsersTop.Controls.Add(Me.lblUserFilter)
+        Me.panelUsersTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelUsersTop.Location = New System.Drawing.Point(0, 32)
+        Me.panelUsersTop.Name = "panelUsersTop"
+        Me.panelUsersTop.Size = New System.Drawing.Size(692, 32)
+        Me.panelUsersTop.TabIndex = 8
+        '
+        'txtFilter
+        '
+        Me.txtFilter.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtFilter.Location = New System.Drawing.Point(108, 6)
+        Me.txtFilter.Name = "txtFilter"
+        Me.txtFilter.Size = New System.Drawing.Size(572, 20)
+        Me.txtFilter.TabIndex = 1
+        '
+        'lblUserFilter
+        '
+        Me.lblUserFilter.Location = New System.Drawing.Point(3, 5)
+        Me.lblUserFilter.Name = "lblUserFilter"
+        Me.lblUserFilter.Size = New System.Drawing.Size(99, 23)
+        Me.lblUserFilter.TabIndex = 0
+        Me.lblUserFilter.Text = "User name filter:"
+        Me.lblUserFilter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'userStatusStrip
+        '
+        Me.userStatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.userStatusLabel, Me.userRefreshProgessBar, Me.userRefreshCancelButton})
+        Me.userStatusStrip.Location = New System.Drawing.Point(0, 710)
+        Me.userStatusStrip.Name = "userStatusStrip"
+        Me.userStatusStrip.Size = New System.Drawing.Size(692, 22)
+        Me.userStatusStrip.TabIndex = 7
+        '
+        'userStatusLabel
+        '
+        Me.userStatusLabel.AutoSize = False
+        Me.userStatusLabel.Name = "userStatusLabel"
+        Me.userStatusLabel.Size = New System.Drawing.Size(200, 17)
+        Me.userStatusLabel.Text = "Number of users:"
+        Me.userStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'userRefreshProgessBar
+        '
+        Me.userRefreshProgessBar.Name = "userRefreshProgessBar"
+        Me.userRefreshProgessBar.Size = New System.Drawing.Size(200, 16)
+        '
+        'userRefreshCancelButton
+        '
+        Me.userRefreshCancelButton.IsLink = True
+        Me.userRefreshCancelButton.Name = "userRefreshCancelButton"
+        Me.userRefreshCancelButton.Size = New System.Drawing.Size(147, 17)
+        Me.userRefreshCancelButton.Text = "Click to cancel the process"
+        '
+        'panelRightTop
+        '
+        Me.panelRightTop.BackgroundImage = CType(resources.GetObject("panelRightTop.BackgroundImage"), System.Drawing.Image)
+        Me.panelRightTop.Controls.Add(Me.lblUsersPerServer)
+        Me.panelRightTop.Controls.Add(Me.btnRefresh)
+        Me.panelRightTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelRightTop.Location = New System.Drawing.Point(0, 0)
+        Me.panelRightTop.Name = "panelRightTop"
+        Me.panelRightTop.Size = New System.Drawing.Size(692, 32)
+        Me.panelRightTop.TabIndex = 5
+        '
+        'lblUsersPerServer
+        '
+        Me.lblUsersPerServer.BackColor = System.Drawing.Color.Transparent
+        Me.lblUsersPerServer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblUsersPerServer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsersPerServer.ForeColor = System.Drawing.Color.White
+        Me.lblUsersPerServer.Location = New System.Drawing.Point(0, 0)
+        Me.lblUsersPerServer.Name = "lblUsersPerServer"
+        Me.lblUsersPerServer.Size = New System.Drawing.Size(660, 32)
+        Me.lblUsersPerServer.TabIndex = 4
+        Me.lblUsersPerServer.Text = "Users connected to the selected servers"
+        Me.lblUsersPerServer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.BackgroundImage = Global.TSRemoteControl.My.Resources.images.refresh32
+        Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnRefresh.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnRefresh.Location = New System.Drawing.Point(660, 0)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(32, 32)
+        Me.btnRefresh.TabIndex = 5
+        Me.toolTipsManager.SetToolTip(Me.btnRefresh, "Refresh users")
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
+        'listUsers
+        '
+        Me.listUsers.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.listUsers.Location = New System.Drawing.Point(0, 0)
+        Me.listUsers.Name = "listUsers"
+        Me.listUsers.Size = New System.Drawing.Size(692, 732)
+        Me.listUsers.TabIndex = 2
+        Me.listUsers.UseCompatibleStateImageBehavior = False
+        '
+        'toolTipsManager
+        '
+        Me.toolTipsManager.IsBalloon = True
+        '
+        'timerUserRefresh
+        '
+        Me.timerUserRefresh.Interval = 60000
+        '
+        'bgWorker
+        '
+        Me.bgWorker.WorkerReportsProgress = True
+        Me.bgWorker.WorkerSupportsCancellation = True
+        '
+        'mainMenuStrip
+        '
+        Me.mainMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.mainMenuStrip.Location = New System.Drawing.Point(0, 0)
+        Me.mainMenuStrip.Name = "mainMenuStrip"
+        Me.mainMenuStrip.Size = New System.Drawing.Size(1044, 24)
+        Me.mainMenuStrip.TabIndex = 1
+        Me.mainMenuStrip.Text = "MainMenu"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportServersFileToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "&File"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ExitToolStripMenuItem.Text = "&Exit"
+        '
+        'ImportServersFileToolStripMenuItem
+        '
+        Me.ImportServersFileToolStripMenuItem.Name = "ImportServersFileToolStripMenuItem"
+        Me.ImportServersFileToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ImportServersFileToolStripMenuItem.Text = "&Import servers file"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutThisApplicationToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "&Help"
+        '
+        'AboutThisApplicationToolStripMenuItem
+        '
+        Me.AboutThisApplicationToolStripMenuItem.Name = "AboutThisApplicationToolStripMenuItem"
+        Me.AboutThisApplicationToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.AboutThisApplicationToolStripMenuItem.Text = "&About this application"
+        '
+        'dlgOpenFile
+        '
+        Me.dlgOpenFile.Filter = "Config file | *.config"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1044, 756)
         Me.Controls.Add(Me.contentContainer)
+        Me.Controls.Add(Me.mainMenuStrip)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.mainMenuStrip = Me.mainMenuStrip
         Me.Name = "frmMain"
-        Me.Text = "Remote control terminal server user's session"
+        Me.Text = "Remote control terminal server user sessions"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.contentContainer.Panel1.ResumeLayout(False)
         Me.contentContainer.Panel2.ResumeLayout(False)
@@ -642,7 +711,10 @@ Partial Class frmMain
         Me.userStatusStrip.ResumeLayout(False)
         Me.userStatusStrip.PerformLayout()
         Me.panelRightTop.ResumeLayout(False)
+        Me.mainMenuStrip.ResumeLayout(False)
+        Me.mainMenuStrip.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents contentContainer As System.Windows.Forms.SplitContainer
@@ -698,4 +770,11 @@ Partial Class frmMain
     Friend WithEvents UserState As DataGridViewTextBoxColumn
     Friend WithEvents PCName As DataGridViewTextBoxColumn
     Friend WithEvents colCloseSession As DataGridViewButtonColumn
+    Friend WithEvents mainMenuStrip As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutThisApplicationToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImportServersFileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents dlgOpenFile As OpenFileDialog
 End Class
