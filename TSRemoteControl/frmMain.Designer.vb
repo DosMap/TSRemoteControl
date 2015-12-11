@@ -79,11 +79,13 @@ Partial Class frmMain
         Me.bgWorker = New System.ComponentModel.BackgroundWorker()
         Me.mainMenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImportServersFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutThisApplicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
+        Me.ExportServersFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dlgSaveFile = New System.Windows.Forms.SaveFileDialog()
         CType(Me.contentContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.contentContainer.Panel1.SuspendLayout()
         Me.contentContainer.Panel2.SuspendLayout()
@@ -637,22 +639,22 @@ Partial Class frmMain
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportServersFileToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportServersFileToolStripMenuItem, Me.ExportServersFileToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.ExitToolStripMenuItem.Text = "&Exit"
         '
         'ImportServersFileToolStripMenuItem
         '
         Me.ImportServersFileToolStripMenuItem.Name = "ImportServersFileToolStripMenuItem"
         Me.ImportServersFileToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.ImportServersFileToolStripMenuItem.Text = "&Import servers file"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ExitToolStripMenuItem.Text = "&Exit"
         '
         'HelpToolStripMenuItem
         '
@@ -671,6 +673,16 @@ Partial Class frmMain
         '
         Me.dlgOpenFile.Filter = "Config file | *.config"
         '
+        'ExportServersFileToolStripMenuItem
+        '
+        Me.ExportServersFileToolStripMenuItem.Name = "ExportServersFileToolStripMenuItem"
+        Me.ExportServersFileToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ExportServersFileToolStripMenuItem.Text = "E&xport servers file"
+        '
+        'dlgSaveFile
+        '
+        Me.dlgSaveFile.Filter = "Config file |*.config"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -679,7 +691,6 @@ Partial Class frmMain
         Me.Controls.Add(Me.contentContainer)
         Me.Controls.Add(Me.mainMenuStrip)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.mainMenuStrip = Me.mainMenuStrip
         Me.Name = "frmMain"
         Me.Text = "Remote control terminal server user sessions"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -777,4 +788,6 @@ Partial Class frmMain
     Friend WithEvents AboutThisApplicationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ImportServersFileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents dlgOpenFile As OpenFileDialog
+    Friend WithEvents ExportServersFileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents dlgSaveFile As SaveFileDialog
 End Class

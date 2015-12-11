@@ -407,16 +407,45 @@
 
     Private Sub ImportServersFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportServersFileToolStripMenuItem.Click
 
-        MsgBox("Not implemented", MsgBoxStyle.Information)
-        'If dlgOpenFile.ShowDialog() = DialogResult.OK Then
+        If dlgOpenFile.ShowDialog() = DialogResult.OK Then
 
-        '    'Verify is the file exists
-        '    If System.IO.File.Exists(dlgOpenFile.FileName) Then
-        '        'Validate the file format
+            'Verify is the file exists
+            If System.IO.File.Exists(dlgOpenFile.FileName) Then
+                'Validate the file format
+                Dim itWorked As Boolean = False
 
-        '    End If
+                Try
+                    Dim ser As New Xml.Serialization.XmlSerializer(Me.GroupsAndServersData.GetType)
+                    Dim objStreamReader As New IO.StreamReader(dlgOpenFile.FileName)
+                    Dim tmp As dsetGroupsAndServers
+                    tmp = ser.Deserialize(objStreamReader)
+                    objStreamReader.Close()
+                    itWorked = True
+                Catch ex As Exception
+                    itWorked = False
+                End Try
 
-        'End If
+                If itWorked Then
+                    GroupsAndServersData.servers.Clear()
+                    GroupsAndServersData.groups.Clear()
+                    GroupsAndServersData.ReadXml(dlgOpenFile.FileName)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub ExportServersFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExportServersFileToolStripMenuItem.Click
+
+        If dlgSaveFile.ShowDialog() = DialogResult.OK Then
+            Dim ser As New Xml.Serialization.XmlSerializer(Me.GroupsAndServersData.GetType)
+            If Not System.IO.File.Exists(dlgSaveFile.FileName) Then
+                System.IO.File.CreateText(dlgSaveFile.FileName)
+            End If
+            Dim objStreamWriter As New IO.StreamWriter(dlgSaveFile.FileName)
+            ser.Serialize(objStreamWriter, GroupsAndServersData)
+            objStreamWriter.Close()
+        End If
+
     End Sub
 
 #End Region
