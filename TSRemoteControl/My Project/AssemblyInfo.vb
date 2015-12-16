@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("TSRemoteControl")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("TSRemoteControl")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2015")> 
+<Assembly: AssemblyTitle("TSRemoteControl")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("DosMap")>
+<Assembly: AssemblyProduct("TSRemoteControl")>
+<Assembly: AssemblyCopyright("Copyright © DosMap 2015")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'El siguiente GUID sirve como identificador de typelib si este proyecto se expone a COM
-<Assembly: Guid("36797b56-ccaa-453b-b348-158bacc67310")> 
+<Assembly: Guid("36797b56-ccaa-453b-b348-158bacc67310")>
 
 ' La información de versión de un ensamblado consta de los cuatro valores siguientes:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' mediante el asterisco ('*'), como se muestra a continuación:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("0.9.0.0")>
+<Assembly: AssemblyFileVersion("0.9.0.0")>

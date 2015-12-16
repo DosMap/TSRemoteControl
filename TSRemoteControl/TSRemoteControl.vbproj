@@ -92,10 +92,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsetUsers.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dlgAbout.Designer.vb">
-      <DependentUpon>dlgAbout.vb</DependentUpon>
+    <Compile Include="dlgAboutThisApp.Designer.vb">
+      <DependentUpon>dlgAboutThisApp.vb</DependentUpon>
     </Compile>
-    <Compile Include="dlgAbout.vb">
+    <Compile Include="dlgAboutThisApp.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dlgMessage.Designer.vb">
@@ -103,6 +103,11 @@
     </Compile>
     <Compile Include="dlgMessage.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\dlgAboutThisApp_strings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dlgAboutThisApp_strings.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\frmMain_strings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -157,14 +162,14 @@
     <Compile Include="UserInfo.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="dlgAbout.es-ES.resx">
-      <DependentUpon>dlgAbout.vb</DependentUpon>
+    <EmbeddedResource Include="dlgAboutThisApp.es-ES.resx">
+      <DependentUpon>dlgAboutThisApp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dlgAbout.es.resx">
-      <DependentUpon>dlgAbout.vb</DependentUpon>
+    <EmbeddedResource Include="dlgAboutThisApp.es.resx">
+      <DependentUpon>dlgAboutThisApp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dlgAbout.resx">
-      <DependentUpon>dlgAbout.vb</DependentUpon>
+    <EmbeddedResource Include="dlgAboutThisApp.resx">
+      <DependentUpon>dlgAboutThisApp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dlgGroupEdit.es-ES.resx">
       <DependentUpon>dlgGroupEdit.vb</DependentUpon>
@@ -212,6 +217,13 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dlgAboutThisApp_strings.es-ES.resx" />
+    <EmbeddedResource Include="Resources\dlgAboutThisApp_strings.es.resx" />
+    <EmbeddedResource Include="Resources\dlgAboutThisApp_strings.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>dlgAboutThisApp_strings.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\frmMain_strings.es-ES.resx" />
     <EmbeddedResource Include="Resources\frmMain_strings.es.resx" />

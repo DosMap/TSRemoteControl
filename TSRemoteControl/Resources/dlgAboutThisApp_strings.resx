@@ -117,10 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Sobre esta aplicación</value>
+  <data name="about" xml:space="preserve">
+    <value>About {0}</value>
   </data>
-  <data name="lblText.Text" xml:space="preserve">
-    <value>Toda la información sobre esta aplicación se encuentra en:</value>
+  <data name="companyName" xml:space="preserve">
+    <value>Developed by {0}</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>This application allows to remote control Terminal server sessions running on Windows 2012 servers</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Version {0}</value>
   </data>
 </root>

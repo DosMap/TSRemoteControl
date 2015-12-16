@@ -413,7 +413,7 @@
     End Sub
 
     Private Sub AboutThisApplicationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutThisApplicationToolStripMenuItem.Click
-        Using dHelp As New dlgAbout()
+        Using dHelp As New dlgAboutThisApp()
             dHelp.ShowDialog()
         End Using
     End Sub
