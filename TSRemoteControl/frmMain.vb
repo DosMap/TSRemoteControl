@@ -96,9 +96,9 @@
                                                   Select g.serverId).Count
                     If numberOfServersInGroup > 1 Then
                         'The group has servers, ask the user if he really want to delete this group
-                        If MsgBox("The group you're trying to delete has servers. Do you want to continue and delete the group?",
+                        If MsgBox(My.Resources.frmMain_strings.deletingGroupWithServers,
                                   MsgBoxStyle.YesNo Or MsgBoxStyle.Question,
-                                  "Question") = MsgBoxResult.Yes Then
+                                  My.Resources.frmMain_strings.msgQuestion) = MsgBoxResult.Yes Then
                             hasToDeleteGroup = True
                         Else
                             hasToDeleteGroup = False
@@ -232,11 +232,11 @@
                 If e.RowIndex >= 0 Then
                     If TerminalServerCommands.closeUserSession(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
                                                                dgwUsers.Rows(e.RowIndex).Cells("UserId").Value) Then
-                        MsgBox("Session terminated", MsgBoxStyle.OkOnly Or MsgBoxStyle.Information, "Message")
+                        MsgBox(My.Resources.frmMain_strings.sessionTerminated, MsgBoxStyle.OkOnly Or MsgBoxStyle.Information, My.Resources.frmMain_strings.msgMessage)
                         RefreshUsers()
                     End If
                 Else
-                    If MsgBox("Are you sure you want to terminate all sessions visible in the grid?", MsgBoxStyle.YesNo Or MsgBoxStyle.Question) = MsgBoxResult.Yes Then
+                    If MsgBox(My.Resources.frmMain_strings.questionTerminateAllUsers, MsgBoxStyle.YesNo Or MsgBoxStyle.Question) = MsgBoxResult.Yes Then
                         For Each r As DataGridViewRow In dgwUsers.Rows
                             TerminalServerCommands.closeUserSession(r.Cells("TSName").Value,
                                                                     r.Cells("UserId").Value)
@@ -297,7 +297,7 @@
             If dlgGroup.ShowDialog() = Windows.Forms.DialogResult.OK Then
                 Dim gRow = GroupsAndServersData.groups.AddgroupsRow(System.Guid.NewGuid(), dlgGroup.GroupName)
                 'When We add a group, We automatically add a server entry to represent all the servers in the group
-                GroupsAndServersData.servers.AddserversRow(gRow, System.Guid.NewGuid(), "", "<ALL SERVERS>", True)
+                GroupsAndServersData.servers.AddserversRow(gRow, System.Guid.NewGuid(), "", My.Resources.frmMain_strings.allServers, True)
             End If
         End Using
     End Sub
@@ -344,7 +344,7 @@
 
     Private Sub RefreshUsers()
         If Not bgWorker.IsBusy Then
-            userStatusLabel.Text = "Refreshing user list ..."
+            userStatusLabel.Text = My.Resources.frmMain_strings.refreshingUserList
 
             userRefreshProgessBar.Value = 0
             userRefreshProgessBar.Visible = True
@@ -384,7 +384,7 @@
     Private Sub bgWorker_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles bgWorker.RunWorkerCompleted
         dgwUsers.Refresh()
         dgwUsers.PerformLayout()
-        userStatusLabel.Text = String.Format("Number of users: {0}", UsersData.Users.Rows.Count)
+        userStatusLabel.Text = String.Format(My.Resources.frmMain_strings.numberOfUsers, UsersData.Users.Rows.Count)
         userRefreshProgessBar.Visible = False
         userRefreshCancelButton.Visible = False
         dgwUsers.Cursor = Cursors.Default
