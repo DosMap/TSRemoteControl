@@ -152,17 +152,47 @@
     <Compile Include="UserInfo.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dlgAbout.es-ES.resx">
+      <DependentUpon>dlgAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgAbout.es.resx">
+      <DependentUpon>dlgAbout.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlgAbout.resx">
       <DependentUpon>dlgAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgGroupEdit.es-ES.resx">
+      <DependentUpon>dlgGroupEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgGroupEdit.es.resx">
+      <DependentUpon>dlgGroupEdit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dlgGroupEdit.resx">
       <DependentUpon>dlgGroupEdit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dlgMessage.es-ES.resx">
+      <DependentUpon>dlgMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgMessage.es.resx">
+      <DependentUpon>dlgMessage.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlgMessage.resx">
       <DependentUpon>dlgMessage.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dlgServerEdit.es-ES.resx">
+      <DependentUpon>dlgServerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgServerEdit.es.resx">
+      <DependentUpon>dlgServerEdit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlgServerEdit.resx">
       <DependentUpon>dlgServerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.es-ES.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.es.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>

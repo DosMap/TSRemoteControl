@@ -22,6 +22,7 @@ Partial Class dlgAbout
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dlgAbout))
         Me.lblLink = New System.Windows.Forms.LinkLabel()
         Me.lblApplicationName = New System.Windows.Forms.Label()
         Me.lblText = New System.Windows.Forms.Label()
@@ -29,38 +30,24 @@ Partial Class dlgAbout
         '
         'lblLink
         '
-        Me.lblLink.AutoSize = True
-        Me.lblLink.Location = New System.Drawing.Point(28, 107)
+        resources.ApplyResources(Me.lblLink, "lblLink")
         Me.lblLink.Name = "lblLink"
-        Me.lblLink.Size = New System.Drawing.Size(229, 13)
-        Me.lblLink.TabIndex = 0
         Me.lblLink.TabStop = True
-        Me.lblLink.Text = "https://github.com/DosMap/TSRemoteControl"
         '
         'lblApplicationName
         '
-        Me.lblApplicationName.AutoSize = True
-        Me.lblApplicationName.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblApplicationName.Location = New System.Drawing.Point(19, 13)
+        resources.ApplyResources(Me.lblApplicationName, "lblApplicationName")
         Me.lblApplicationName.Name = "lblApplicationName"
-        Me.lblApplicationName.Size = New System.Drawing.Size(247, 31)
-        Me.lblApplicationName.TabIndex = 1
-        Me.lblApplicationName.Text = "TSRemoteControl"
         '
         'lblText
         '
-        Me.lblText.AutoSize = True
-        Me.lblText.Location = New System.Drawing.Point(5, 63)
+        resources.ApplyResources(Me.lblText, "lblText")
         Me.lblText.Name = "lblText"
-        Me.lblText.Size = New System.Drawing.Size(274, 13)
-        Me.lblText.TabIndex = 2
-        Me.lblText.Text = "All the information about this application can be found at:"
         '
         'dlgAbout
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 141)
         Me.Controls.Add(Me.lblText)
         Me.Controls.Add(Me.lblApplicationName)
         Me.Controls.Add(Me.lblLink)
@@ -68,8 +55,6 @@ Partial Class dlgAbout
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgAbout"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "About this application"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

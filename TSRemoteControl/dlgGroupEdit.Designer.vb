@@ -41,8 +41,8 @@ Partial Class dlgGroupEdit
         '
         'btnCancel
         '
-        Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         resources.ApplyResources(Me.btnCancel, "btnCancel")
+        Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
