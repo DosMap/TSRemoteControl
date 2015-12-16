@@ -77,14 +77,14 @@ Partial Class frmMain
         Me.toolTipsManager = New System.Windows.Forms.ToolTip(Me.components)
         Me.timerUserRefresh = New System.Windows.Forms.Timer(Me.components)
         Me.bgWorker = New System.ComponentModel.BackgroundWorker()
-        Me.mainMenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.TheMenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImportServersFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExportServersFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutThisApplicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
-        Me.ExportServersFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dlgSaveFile = New System.Windows.Forms.SaveFileDialog()
         CType(Me.contentContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.contentContainer.Panel1.SuspendLayout()
@@ -111,7 +111,7 @@ Partial Class frmMain
         Me.panelUsersTop.SuspendLayout()
         Me.userStatusStrip.SuspendLayout()
         Me.panelRightTop.SuspendLayout()
-        Me.mainMenuStrip.SuspendLayout()
+        Me.TheMenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'contentContainer
@@ -155,7 +155,7 @@ Partial Class frmMain
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.bottomLeftPanel)
         Me.SplitContainer2.Size = New System.Drawing.Size(348, 732)
-        Me.SplitContainer2.SplitterDistance = 197
+        Me.SplitContainer2.SplitterDistance = 263
         Me.SplitContainer2.TabIndex = 0
         '
         'topLeftPanel
@@ -165,7 +165,7 @@ Partial Class frmMain
         Me.topLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.topLeftPanel.Location = New System.Drawing.Point(0, 0)
         Me.topLeftPanel.Name = "topLeftPanel"
-        Me.topLeftPanel.Size = New System.Drawing.Size(348, 197)
+        Me.topLeftPanel.Size = New System.Drawing.Size(348, 263)
         Me.topLeftPanel.TabIndex = 0
         '
         'dgwGroups
@@ -188,7 +188,7 @@ Partial Class frmMain
         Me.dgwGroups.ReadOnly = True
         Me.dgwGroups.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgwGroups.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgwGroups.Size = New System.Drawing.Size(348, 165)
+        Me.dgwGroups.Size = New System.Drawing.Size(348, 231)
         Me.dgwGroups.TabIndex = 2
         '
         'GroupIdDataGridViewTextBoxColumn
@@ -283,7 +283,7 @@ Partial Class frmMain
         Me.bottomLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bottomLeftPanel.Location = New System.Drawing.Point(0, 0)
         Me.bottomLeftPanel.Name = "bottomLeftPanel"
-        Me.bottomLeftPanel.Size = New System.Drawing.Size(348, 531)
+        Me.bottomLeftPanel.Size = New System.Drawing.Size(348, 465)
         Me.bottomLeftPanel.TabIndex = 0
         '
         'dgwServers
@@ -303,7 +303,7 @@ Partial Class frmMain
         Me.dgwServers.ReadOnly = True
         Me.dgwServers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgwServers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.dgwServers.Size = New System.Drawing.Size(348, 499)
+        Me.dgwServers.Size = New System.Drawing.Size(348, 433)
         Me.dgwServers.TabIndex = 4
         '
         'colGetUsers
@@ -628,14 +628,14 @@ Partial Class frmMain
         Me.bgWorker.WorkerReportsProgress = True
         Me.bgWorker.WorkerSupportsCancellation = True
         '
-        'mainMenuStrip
+        'TheMenuStrip
         '
-        Me.mainMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
-        Me.mainMenuStrip.Location = New System.Drawing.Point(0, 0)
-        Me.mainMenuStrip.Name = "mainMenuStrip"
-        Me.mainMenuStrip.Size = New System.Drawing.Size(1044, 24)
-        Me.mainMenuStrip.TabIndex = 1
-        Me.mainMenuStrip.Text = "MainMenu"
+        Me.TheMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.TheMenuStrip.Location = New System.Drawing.Point(0, 0)
+        Me.TheMenuStrip.Name = "TheMenuStrip"
+        Me.TheMenuStrip.Size = New System.Drawing.Size(1044, 24)
+        Me.TheMenuStrip.TabIndex = 1
+        Me.TheMenuStrip.Text = "MainMenu"
         '
         'FileToolStripMenuItem
         '
@@ -649,6 +649,12 @@ Partial Class frmMain
         Me.ImportServersFileToolStripMenuItem.Name = "ImportServersFileToolStripMenuItem"
         Me.ImportServersFileToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.ImportServersFileToolStripMenuItem.Text = "&Import servers file"
+        '
+        'ExportServersFileToolStripMenuItem
+        '
+        Me.ExportServersFileToolStripMenuItem.Name = "ExportServersFileToolStripMenuItem"
+        Me.ExportServersFileToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ExportServersFileToolStripMenuItem.Text = "E&xport servers file"
         '
         'ExitToolStripMenuItem
         '
@@ -673,12 +679,6 @@ Partial Class frmMain
         '
         Me.dlgOpenFile.Filter = "Config file | *.config"
         '
-        'ExportServersFileToolStripMenuItem
-        '
-        Me.ExportServersFileToolStripMenuItem.Name = "ExportServersFileToolStripMenuItem"
-        Me.ExportServersFileToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.ExportServersFileToolStripMenuItem.Text = "E&xport servers file"
-        '
         'dlgSaveFile
         '
         Me.dlgSaveFile.Filter = "Config file |*.config"
@@ -689,7 +689,7 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1044, 756)
         Me.Controls.Add(Me.contentContainer)
-        Me.Controls.Add(Me.mainMenuStrip)
+        Me.Controls.Add(Me.TheMenuStrip)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.Text = "Remote control terminal server user sessions"
@@ -722,8 +722,8 @@ Partial Class frmMain
         Me.userStatusStrip.ResumeLayout(False)
         Me.userStatusStrip.PerformLayout()
         Me.panelRightTop.ResumeLayout(False)
-        Me.mainMenuStrip.ResumeLayout(False)
-        Me.mainMenuStrip.PerformLayout()
+        Me.TheMenuStrip.ResumeLayout(False)
+        Me.TheMenuStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -781,7 +781,7 @@ Partial Class frmMain
     Friend WithEvents UserState As DataGridViewTextBoxColumn
     Friend WithEvents PCName As DataGridViewTextBoxColumn
     Friend WithEvents colCloseSession As DataGridViewButtonColumn
-    Friend WithEvents mainMenuStrip As MenuStrip
+    Friend WithEvents TheMenuStrip As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem

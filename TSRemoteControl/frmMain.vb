@@ -415,11 +415,9 @@
                 Dim itWorked As Boolean = False
 
                 Try
-                    Dim ser As New Xml.Serialization.XmlSerializer(Me.GroupsAndServersData.GetType)
-                    Dim objStreamReader As New IO.StreamReader(dlgOpenFile.FileName)
-                    Dim tmp As dsetGroupsAndServers
-                    tmp = ser.Deserialize(objStreamReader)
-                    objStreamReader.Close()
+                    Using tmp As New dsetGroupsAndServers
+                        tmp.ReadXml(My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\TSRemoteControl.config")
+                    End Using
                     itWorked = True
                 Catch ex As Exception
                     itWorked = False
@@ -437,15 +435,8 @@
     Private Sub ExportServersFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExportServersFileToolStripMenuItem.Click
 
         If dlgSaveFile.ShowDialog() = DialogResult.OK Then
-            Dim ser As New Xml.Serialization.XmlSerializer(Me.GroupsAndServersData.GetType)
-            If Not System.IO.File.Exists(dlgSaveFile.FileName) Then
-                System.IO.File.CreateText(dlgSaveFile.FileName)
-            End If
-            Dim objStreamWriter As New IO.StreamWriter(dlgSaveFile.FileName)
-            ser.Serialize(objStreamWriter, GroupsAndServersData)
-            objStreamWriter.Close()
+            GroupsAndServersData.WriteXml(dlgSaveFile.FileName)
         End If
-
     End Sub
 
 #End Region
