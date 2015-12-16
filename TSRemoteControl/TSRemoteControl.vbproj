@@ -232,6 +232,9 @@
     <Content Include="Images\delete.png" />
     <Content Include="Images\delete32.png" />
     <Content Include="Images\delete64.png" />
+    <None Include="Images\deleteBlue.png" />
+    <None Include="Images\deleteBlue32.png" />
+    <None Include="Images\deleteBlue64.png" />
     <Content Include="Images\edit.png" />
     <Content Include="Images\edit32.png" />
     <Content Include="Images\edit64.png" />

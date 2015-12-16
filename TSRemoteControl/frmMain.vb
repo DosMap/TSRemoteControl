@@ -206,29 +206,42 @@
             End If
         End If
 
-        If e.ColumnIndex = USER_CLOSE_SESSION AndAlso e.RowIndex >= 0 Then
+        If e.ColumnIndex = USER_CLOSE_SESSION Then
             e.Paint(e.CellBounds, DataGridViewPaintParts.All)
             Dim img As Image = Nothing
-            img = CType(My.Resources.images.delete32, Image)
+            If e.RowIndex >= 0 Then
+                img = CType(My.Resources.images.delete32, Image)
+            Else
+                img = CType(My.Resources.images.deleteBlue32, Image)
+            End If
 
             If Not img Is Nothing Then
-                e.Graphics.DrawImage(img, e.CellBounds.Left + 10, e.CellBounds.Top + 5, 10, 10)
-                e.Handled = True
+                    e.Graphics.DrawImage(img, e.CellBounds.Left + 10, e.CellBounds.Top + 5, 10, 10)
+                    e.Handled = True
+                End If
             End If
-        End If
     End Sub
 
     Private Sub dgwUsers_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgwUsers.CellClick
         Select Case e.ColumnIndex
             Case USER_CONNECT_CELL
                 TerminalServerCommands.connectToTSUser(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
-                                       dgwUsers.Rows(e.RowIndex).Cells("UserId").Value)
+                                                       dgwUsers.Rows(e.RowIndex).Cells("UserId").Value)
 
             Case USER_CLOSE_SESSION
-                If TerminalServerCommands.closeUserSession(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
-                                                        dgwUsers.Rows(e.RowIndex).Cells("UserId").Value) Then
-                    MsgBox("Session terminated", MsgBoxStyle.OkOnly Or MsgBoxStyle.Information, "Message")
-                    RefreshUsers()
+                If e.RowIndex >= 0 Then
+                    If TerminalServerCommands.closeUserSession(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
+                                                               dgwUsers.Rows(e.RowIndex).Cells("UserId").Value) Then
+                        MsgBox("Session terminated", MsgBoxStyle.OkOnly Or MsgBoxStyle.Information, "Message")
+                        RefreshUsers()
+                    End If
+                Else
+                    If MsgBox("Are you sure you want to terminate all sessions visible in the grid?", MsgBoxStyle.YesNo Or MsgBoxStyle.Question) = MsgBoxResult.Yes Then
+                        For Each r As DataGridViewRow In dgwUsers.Rows
+                            TerminalServerCommands.closeUserSession(r.Cells("TSName").Value,
+                                                                    r.Cells("UserId").Value)
+                        Next
+                    End If
                 End If
             Case USER_MESSAGE
                 Using dlg As New dlgMessage()
@@ -239,13 +252,13 @@
                                                                      dlg.Message,
                                                                      dlg.Sender)
                         Else
-                            sendMessageToAllUsers(UsersData, dlg.Message, dlg.Sender)
-                            'For Each r In dgwUsers.Rows
-                            '    TerminalServerCommands.sendMessageToUser(r.Cells("TSName").Value,
-                            '                                             r.Cells("UserId").Value,
-                            '                                             dlg.Message,
-                            '                                             dlg.Sender)
-                            'Next
+                            'sendMessageToAllUsers(UsersData, dlg.Message, dlg.Sender)
+                            For Each r In dgwUsers.Rows
+                                TerminalServerCommands.sendMessageToUser(r.Cells("TSName").Value,
+                                                                         r.Cells("UserId").Value,
+                                                                         dlg.Message,
+                                                                         dlg.Sender)
+                            Next
                         End If
                     End If
                 End Using
