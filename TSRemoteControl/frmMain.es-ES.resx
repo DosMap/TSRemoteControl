@@ -179,7 +179,7 @@
     <value>Cerrar la sesión del usuario</value>
   </data>
   <data name="lblUserFilter.Text" xml:space="preserve">
-    <value>Filtro usuario:</value>
+    <value>Filtro de usuario:</value>
   </data>
   <data name="userStatusLabel.Text" xml:space="preserve">
     <value>Número de usuarios:</value>
