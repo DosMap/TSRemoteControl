@@ -63,6 +63,8 @@ Partial Class frmMain
         Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.bindingUsers = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsersData = New TSRemoteControl.dsetUsers()
+        Me.panelHowToFilter = New System.Windows.Forms.Panel()
+        Me.lblHowToFilter = New System.Windows.Forms.Label()
         Me.panelUsersTop = New System.Windows.Forms.Panel()
         Me.txtFilter = New System.Windows.Forms.TextBox()
         Me.lblUserFilter = New System.Windows.Forms.Label()
@@ -108,6 +110,7 @@ Partial Class frmMain
         CType(Me.dgwUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bindingUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersData, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelHowToFilter.SuspendLayout()
         Me.panelUsersTop.SuspendLayout()
         Me.userStatusStrip.SuspendLayout()
         Me.panelRightTop.SuspendLayout()
@@ -121,23 +124,17 @@ Partial Class frmMain
         '
         'contentContainer.Panel1
         '
-        resources.ApplyResources(Me.contentContainer.Panel1, "contentContainer.Panel1")
         Me.contentContainer.Panel1.Controls.Add(Me.panelLeft)
-        Me.toolTipsManager.SetToolTip(Me.contentContainer.Panel1, resources.GetString("contentContainer.Panel1.ToolTip"))
         '
         'contentContainer.Panel2
         '
-        resources.ApplyResources(Me.contentContainer.Panel2, "contentContainer.Panel2")
         Me.contentContainer.Panel2.Controls.Add(Me.panelRight)
-        Me.toolTipsManager.SetToolTip(Me.contentContainer.Panel2, resources.GetString("contentContainer.Panel2.ToolTip"))
-        Me.toolTipsManager.SetToolTip(Me.contentContainer, resources.GetString("contentContainer.ToolTip"))
         '
         'panelLeft
         '
-        resources.ApplyResources(Me.panelLeft, "panelLeft")
         Me.panelLeft.Controls.Add(Me.SplitContainer2)
+        resources.ApplyResources(Me.panelLeft, "panelLeft")
         Me.panelLeft.Name = "panelLeft"
-        Me.toolTipsManager.SetToolTip(Me.panelLeft, resources.GetString("panelLeft.ToolTip"))
         '
         'SplitContainer2
         '
@@ -146,28 +143,21 @@ Partial Class frmMain
         '
         'SplitContainer2.Panel1
         '
-        resources.ApplyResources(Me.SplitContainer2.Panel1, "SplitContainer2.Panel1")
         Me.SplitContainer2.Panel1.Controls.Add(Me.topLeftPanel)
-        Me.toolTipsManager.SetToolTip(Me.SplitContainer2.Panel1, resources.GetString("SplitContainer2.Panel1.ToolTip"))
         '
         'SplitContainer2.Panel2
         '
-        resources.ApplyResources(Me.SplitContainer2.Panel2, "SplitContainer2.Panel2")
         Me.SplitContainer2.Panel2.Controls.Add(Me.bottomLeftPanel)
-        Me.toolTipsManager.SetToolTip(Me.SplitContainer2.Panel2, resources.GetString("SplitContainer2.Panel2.ToolTip"))
-        Me.toolTipsManager.SetToolTip(Me.SplitContainer2, resources.GetString("SplitContainer2.ToolTip"))
         '
         'topLeftPanel
         '
-        resources.ApplyResources(Me.topLeftPanel, "topLeftPanel")
         Me.topLeftPanel.Controls.Add(Me.dgwGroups)
         Me.topLeftPanel.Controls.Add(Me.tlTopPanel)
+        resources.ApplyResources(Me.topLeftPanel, "topLeftPanel")
         Me.topLeftPanel.Name = "topLeftPanel"
-        Me.toolTipsManager.SetToolTip(Me.topLeftPanel, resources.GetString("topLeftPanel.ToolTip"))
         '
         'dgwGroups
         '
-        resources.ApplyResources(Me.dgwGroups, "dgwGroups")
         Me.dgwGroups.AllowUserToAddRows = False
         Me.dgwGroups.AllowUserToDeleteRows = False
         Me.dgwGroups.AllowUserToResizeColumns = False
@@ -178,12 +168,12 @@ Partial Class frmMain
         Me.dgwGroups.ColumnHeadersVisible = False
         Me.dgwGroups.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.GroupIdDataGridViewTextBoxColumn, Me.GroupNameDataGridViewTextBoxColumn, Me.colEdit, Me.colDelete})
         Me.dgwGroups.DataSource = Me.GroupsBindingSource
+        resources.ApplyResources(Me.dgwGroups, "dgwGroups")
         Me.dgwGroups.GridColor = System.Drawing.Color.White
         Me.dgwGroups.MultiSelect = False
         Me.dgwGroups.Name = "dgwGroups"
         Me.dgwGroups.ReadOnly = True
         Me.dgwGroups.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.toolTipsManager.SetToolTip(Me.dgwGroups, resources.GetString("dgwGroups.ToolTip"))
         '
         'GroupIdDataGridViewTextBoxColumn
         '
@@ -229,40 +219,36 @@ Partial Class frmMain
         '
         'tlTopPanel
         '
-        resources.ApplyResources(Me.tlTopPanel, "tlTopPanel")
         Me.tlTopPanel.BackColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.tlTopPanel, "tlTopPanel")
         Me.tlTopPanel.Controls.Add(Me.lblGroups)
         Me.tlTopPanel.Controls.Add(Me.btnAddGroup)
         Me.tlTopPanel.Name = "tlTopPanel"
-        Me.toolTipsManager.SetToolTip(Me.tlTopPanel, resources.GetString("tlTopPanel.ToolTip"))
         '
         'lblGroups
         '
-        resources.ApplyResources(Me.lblGroups, "lblGroups")
         Me.lblGroups.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.lblGroups, "lblGroups")
         Me.lblGroups.ForeColor = System.Drawing.Color.White
         Me.lblGroups.Name = "lblGroups"
-        Me.toolTipsManager.SetToolTip(Me.lblGroups, resources.GetString("lblGroups.ToolTip"))
         '
         'btnAddGroup
         '
-        resources.ApplyResources(Me.btnAddGroup, "btnAddGroup")
         Me.btnAddGroup.BackgroundImage = Global.TSRemoteControl.My.Resources.Resources.add32
+        resources.ApplyResources(Me.btnAddGroup, "btnAddGroup")
         Me.btnAddGroup.Name = "btnAddGroup"
         Me.toolTipsManager.SetToolTip(Me.btnAddGroup, resources.GetString("btnAddGroup.ToolTip"))
         Me.btnAddGroup.UseVisualStyleBackColor = True
         '
         'bottomLeftPanel
         '
-        resources.ApplyResources(Me.bottomLeftPanel, "bottomLeftPanel")
         Me.bottomLeftPanel.Controls.Add(Me.dgwServers)
         Me.bottomLeftPanel.Controls.Add(Me.panelTopServers)
+        resources.ApplyResources(Me.bottomLeftPanel, "bottomLeftPanel")
         Me.bottomLeftPanel.Name = "bottomLeftPanel"
-        Me.toolTipsManager.SetToolTip(Me.bottomLeftPanel, resources.GetString("bottomLeftPanel.ToolTip"))
         '
         'dgwServers
         '
-        resources.ApplyResources(Me.dgwServers, "dgwServers")
         Me.dgwServers.AllowUserToAddRows = False
         Me.dgwServers.AllowUserToDeleteRows = False
         Me.dgwServers.AutoGenerateColumns = False
@@ -271,11 +257,11 @@ Partial Class frmMain
         Me.dgwServers.ColumnHeadersVisible = False
         Me.dgwServers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colGetUsers, Me.GroupIdDataGridViewTextBoxColumn1, Me.ServerIdDataGridViewTextBoxColumn, Me.ServerNameDataGridViewTextBoxColumn, Me.ServerDisplayNameDataGridViewTextBoxColumn, Me.colServerEdit, Me.colServerDelete})
         Me.dgwServers.DataSource = Me.bindingServersByGroup
+        resources.ApplyResources(Me.dgwServers, "dgwServers")
         Me.dgwServers.MultiSelect = False
         Me.dgwServers.Name = "dgwServers"
         Me.dgwServers.ReadOnly = True
         Me.dgwServers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
-        Me.toolTipsManager.SetToolTip(Me.dgwServers, resources.GetString("dgwServers.ToolTip"))
         '
         'colGetUsers
         '
@@ -300,9 +286,9 @@ Partial Class frmMain
         'ServerNameDataGridViewTextBoxColumn
         '
         Me.ServerNameDataGridViewTextBoxColumn.DataPropertyName = "serverName"
-        resources.ApplyResources(Me.ServerNameDataGridViewTextBoxColumn, "ServerNameDataGridViewTextBoxColumn")
         Me.ServerNameDataGridViewTextBoxColumn.Name = "ServerNameDataGridViewTextBoxColumn"
         Me.ServerNameDataGridViewTextBoxColumn.ReadOnly = True
+        resources.ApplyResources(Me.ServerNameDataGridViewTextBoxColumn, "ServerNameDataGridViewTextBoxColumn")
         '
         'ServerDisplayNameDataGridViewTextBoxColumn
         '
@@ -336,38 +322,35 @@ Partial Class frmMain
         Me.panelTopServers.Controls.Add(Me.lblDetailTS)
         Me.panelTopServers.Controls.Add(Me.btnAddServer)
         Me.panelTopServers.Name = "panelTopServers"
-        Me.toolTipsManager.SetToolTip(Me.panelTopServers, resources.GetString("panelTopServers.ToolTip"))
         '
         'lblDetailTS
         '
-        resources.ApplyResources(Me.lblDetailTS, "lblDetailTS")
         Me.lblDetailTS.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.lblDetailTS, "lblDetailTS")
         Me.lblDetailTS.ForeColor = System.Drawing.Color.White
         Me.lblDetailTS.Name = "lblDetailTS"
-        Me.toolTipsManager.SetToolTip(Me.lblDetailTS, resources.GetString("lblDetailTS.ToolTip"))
         '
         'btnAddServer
         '
-        resources.ApplyResources(Me.btnAddServer, "btnAddServer")
         Me.btnAddServer.BackgroundImage = Global.TSRemoteControl.My.Resources.Resources.add32
+        resources.ApplyResources(Me.btnAddServer, "btnAddServer")
         Me.btnAddServer.Name = "btnAddServer"
         Me.toolTipsManager.SetToolTip(Me.btnAddServer, resources.GetString("btnAddServer.ToolTip"))
         Me.btnAddServer.UseVisualStyleBackColor = True
         '
         'panelRight
         '
-        resources.ApplyResources(Me.panelRight, "panelRight")
         Me.panelRight.Controls.Add(Me.dgwUsers)
+        Me.panelRight.Controls.Add(Me.panelHowToFilter)
         Me.panelRight.Controls.Add(Me.panelUsersTop)
         Me.panelRight.Controls.Add(Me.userStatusStrip)
         Me.panelRight.Controls.Add(Me.panelRightTop)
         Me.panelRight.Controls.Add(Me.listUsers)
+        resources.ApplyResources(Me.panelRight, "panelRight")
         Me.panelRight.Name = "panelRight"
-        Me.toolTipsManager.SetToolTip(Me.panelRight, resources.GetString("panelRight.ToolTip"))
         '
         'dgwUsers
         '
-        resources.ApplyResources(Me.dgwUsers, "dgwUsers")
         Me.dgwUsers.AllowUserToAddRows = False
         Me.dgwUsers.AllowUserToDeleteRows = False
         Me.dgwUsers.AllowUserToResizeRows = False
@@ -377,11 +360,11 @@ Partial Class frmMain
         Me.dgwUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgwUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colConnect, Me.TSName, Me.colMessage, Me.UserName, Me.UserId, Me.UserState, Me.PCName, Me.colCloseSession})
         Me.dgwUsers.DataSource = Me.bindingUsers
+        resources.ApplyResources(Me.dgwUsers, "dgwUsers")
         Me.dgwUsers.MultiSelect = False
         Me.dgwUsers.Name = "dgwUsers"
         Me.dgwUsers.ReadOnly = True
         Me.dgwUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.toolTipsManager.SetToolTip(Me.dgwUsers, resources.GetString("dgwUsers.ToolTip"))
         '
         'colConnect
         '
@@ -454,32 +437,39 @@ Partial Class frmMain
         Me.UsersData.DataSetName = "dsetUsers"
         Me.UsersData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'panelHowToFilter
+        '
+        Me.panelHowToFilter.Controls.Add(Me.lblHowToFilter)
+        resources.ApplyResources(Me.panelHowToFilter, "panelHowToFilter")
+        Me.panelHowToFilter.Name = "panelHowToFilter"
+        '
+        'lblHowToFilter
+        '
+        resources.ApplyResources(Me.lblHowToFilter, "lblHowToFilter")
+        Me.lblHowToFilter.Name = "lblHowToFilter"
+        '
         'panelUsersTop
         '
-        resources.ApplyResources(Me.panelUsersTop, "panelUsersTop")
         Me.panelUsersTop.Controls.Add(Me.txtFilter)
         Me.panelUsersTop.Controls.Add(Me.lblUserFilter)
+        resources.ApplyResources(Me.panelUsersTop, "panelUsersTop")
         Me.panelUsersTop.Name = "panelUsersTop"
-        Me.toolTipsManager.SetToolTip(Me.panelUsersTop, resources.GetString("panelUsersTop.ToolTip"))
         '
         'txtFilter
         '
         resources.ApplyResources(Me.txtFilter, "txtFilter")
         Me.txtFilter.Name = "txtFilter"
-        Me.toolTipsManager.SetToolTip(Me.txtFilter, resources.GetString("txtFilter.ToolTip"))
         '
         'lblUserFilter
         '
         resources.ApplyResources(Me.lblUserFilter, "lblUserFilter")
         Me.lblUserFilter.Name = "lblUserFilter"
-        Me.toolTipsManager.SetToolTip(Me.lblUserFilter, resources.GetString("lblUserFilter.ToolTip"))
         '
         'userStatusStrip
         '
-        resources.ApplyResources(Me.userStatusStrip, "userStatusStrip")
         Me.userStatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.userStatusLabel, Me.userRefreshProgessBar, Me.userRefreshCancelButton})
+        resources.ApplyResources(Me.userStatusStrip, "userStatusStrip")
         Me.userStatusStrip.Name = "userStatusStrip"
-        Me.toolTipsManager.SetToolTip(Me.userStatusStrip, resources.GetString("userStatusStrip.ToolTip"))
         '
         'userStatusLabel
         '
@@ -488,14 +478,14 @@ Partial Class frmMain
         '
         'userRefreshProgessBar
         '
-        resources.ApplyResources(Me.userRefreshProgessBar, "userRefreshProgessBar")
         Me.userRefreshProgessBar.Name = "userRefreshProgessBar"
+        resources.ApplyResources(Me.userRefreshProgessBar, "userRefreshProgessBar")
         '
         'userRefreshCancelButton
         '
-        resources.ApplyResources(Me.userRefreshCancelButton, "userRefreshCancelButton")
         Me.userRefreshCancelButton.IsLink = True
         Me.userRefreshCancelButton.Name = "userRefreshCancelButton"
+        resources.ApplyResources(Me.userRefreshCancelButton, "userRefreshCancelButton")
         '
         'panelRightTop
         '
@@ -503,20 +493,18 @@ Partial Class frmMain
         Me.panelRightTop.Controls.Add(Me.lblUsersPerServer)
         Me.panelRightTop.Controls.Add(Me.btnRefresh)
         Me.panelRightTop.Name = "panelRightTop"
-        Me.toolTipsManager.SetToolTip(Me.panelRightTop, resources.GetString("panelRightTop.ToolTip"))
         '
         'lblUsersPerServer
         '
-        resources.ApplyResources(Me.lblUsersPerServer, "lblUsersPerServer")
         Me.lblUsersPerServer.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.lblUsersPerServer, "lblUsersPerServer")
         Me.lblUsersPerServer.ForeColor = System.Drawing.Color.White
         Me.lblUsersPerServer.Name = "lblUsersPerServer"
-        Me.toolTipsManager.SetToolTip(Me.lblUsersPerServer, resources.GetString("lblUsersPerServer.ToolTip"))
         '
         'btnRefresh
         '
-        resources.ApplyResources(Me.btnRefresh, "btnRefresh")
         Me.btnRefresh.BackgroundImage = Global.TSRemoteControl.My.Resources.images.refresh32
+        resources.ApplyResources(Me.btnRefresh, "btnRefresh")
         Me.btnRefresh.Name = "btnRefresh"
         Me.toolTipsManager.SetToolTip(Me.btnRefresh, resources.GetString("btnRefresh.ToolTip"))
         Me.btnRefresh.UseVisualStyleBackColor = True
@@ -525,7 +513,6 @@ Partial Class frmMain
         '
         resources.ApplyResources(Me.listUsers, "listUsers")
         Me.listUsers.Name = "listUsers"
-        Me.toolTipsManager.SetToolTip(Me.listUsers, resources.GetString("listUsers.ToolTip"))
         Me.listUsers.UseCompatibleStateImageBehavior = False
         '
         'toolTipsManager
@@ -534,42 +521,41 @@ Partial Class frmMain
         '
         'TheMenuStrip
         '
-        resources.ApplyResources(Me.TheMenuStrip, "TheMenuStrip")
         Me.TheMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
+        resources.ApplyResources(Me.TheMenuStrip, "TheMenuStrip")
         Me.TheMenuStrip.Name = "TheMenuStrip"
-        Me.toolTipsManager.SetToolTip(Me.TheMenuStrip, resources.GetString("TheMenuStrip.ToolTip"))
         '
         'FileToolStripMenuItem
         '
-        resources.ApplyResources(Me.FileToolStripMenuItem, "FileToolStripMenuItem")
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportServersFileToolStripMenuItem, Me.ExportServersFileToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        resources.ApplyResources(Me.FileToolStripMenuItem, "FileToolStripMenuItem")
         '
         'ImportServersFileToolStripMenuItem
         '
-        resources.ApplyResources(Me.ImportServersFileToolStripMenuItem, "ImportServersFileToolStripMenuItem")
         Me.ImportServersFileToolStripMenuItem.Name = "ImportServersFileToolStripMenuItem"
+        resources.ApplyResources(Me.ImportServersFileToolStripMenuItem, "ImportServersFileToolStripMenuItem")
         '
         'ExportServersFileToolStripMenuItem
         '
-        resources.ApplyResources(Me.ExportServersFileToolStripMenuItem, "ExportServersFileToolStripMenuItem")
         Me.ExportServersFileToolStripMenuItem.Name = "ExportServersFileToolStripMenuItem"
+        resources.ApplyResources(Me.ExportServersFileToolStripMenuItem, "ExportServersFileToolStripMenuItem")
         '
         'ExitToolStripMenuItem
         '
-        resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
         '
         'HelpToolStripMenuItem
         '
-        resources.ApplyResources(Me.HelpToolStripMenuItem, "HelpToolStripMenuItem")
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutThisApplicationToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        resources.ApplyResources(Me.HelpToolStripMenuItem, "HelpToolStripMenuItem")
         '
         'AboutThisApplicationToolStripMenuItem
         '
-        resources.ApplyResources(Me.AboutThisApplicationToolStripMenuItem, "AboutThisApplicationToolStripMenuItem")
         Me.AboutThisApplicationToolStripMenuItem.Name = "AboutThisApplicationToolStripMenuItem"
+        resources.ApplyResources(Me.AboutThisApplicationToolStripMenuItem, "AboutThisApplicationToolStripMenuItem")
         '
         'timerUserRefresh
         '
@@ -595,7 +581,6 @@ Partial Class frmMain
         Me.Controls.Add(Me.contentContainer)
         Me.Controls.Add(Me.TheMenuStrip)
         Me.Name = "frmMain"
-        Me.toolTipsManager.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.contentContainer.Panel1.ResumeLayout(False)
         Me.contentContainer.Panel2.ResumeLayout(False)
@@ -620,6 +605,7 @@ Partial Class frmMain
         CType(Me.dgwUsers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.bindingUsers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsersData, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelHowToFilter.ResumeLayout(False)
         Me.panelUsersTop.ResumeLayout(False)
         Me.panelUsersTop.PerformLayout()
         Me.userStatusStrip.ResumeLayout(False)
@@ -693,4 +679,6 @@ Partial Class frmMain
     Friend WithEvents colMessage As DataGridViewButtonColumn
     Friend WithEvents TSName As DataGridViewTextBoxColumn
     Friend WithEvents colConnect As DataGridViewButtonColumn
+    Friend WithEvents panelHowToFilter As Panel
+    Friend WithEvents lblHowToFilter As Label
 End Class

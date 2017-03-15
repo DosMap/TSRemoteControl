@@ -117,569 +117,89 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;ImportServersFileToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="contentContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SplitContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 732</value>
-  </data>
-  <data name="AboutThisApplicationToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;About this application</value>
-  </data>
-  <data name="panelRightTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="userStatusStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 710</value>
-  </data>
-  <data name="&gt;&gt;listUsers.Name" xml:space="preserve">
-    <value>listUsers</value>
-  </data>
-  <data name="&gt;&gt;contentContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ServerNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>ServerNameDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Panel1.Name" xml:space="preserve">
-    <value>SplitContainer2.Panel1</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAddGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="panelTopServers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 32</value>
-  </data>
-  <data name="dlgOpenFile.Filter" xml:space="preserve">
-    <value>Config file | *.config</value>
-  </data>
-  <data name="colServerDelete.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;AboutThisApplicationToolStripMenuItem.Name" xml:space="preserve">
-    <value>AboutThisApplicationToolStripMenuItem</value>
-  </data>
-  <data name="panelTopServers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;topLeftPanel.Name" xml:space="preserve">
-    <value>topLeftPanel</value>
-  </data>
-  <data name="&gt;&gt;ServerIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>ServerIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="lblUsersPerServer.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="colGetUsers.MinimumWidth" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Panel2.Parent" xml:space="preserve">
-    <value>SplitContainer2</value>
-  </data>
-  <data name="ExportServersFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>E&amp;xport servers file</value>
-  </data>
-  <data name="&gt;&gt;panelLeft.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ImportServersFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
-  </data>
-  <data name="&gt;&gt;UserState.Name" xml:space="preserve">
-    <value>UserState</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="topLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="TheMenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblUsersPerServer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="userRefreshProgessBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 16</value>
-  </data>
-  <data name="btnAddServer.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;userStatusStrip.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;userRefreshCancelButton.Name" xml:space="preserve">
-    <value>userRefreshCancelButton</value>
-  </data>
-  <data name="listUsers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;panelTopServers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dgwUsers.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;colDelete.Name" xml:space="preserve">
-    <value>colDelete</value>
-  </data>
-  <data name="&gt;&gt;dlgOpenFile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblUserFilter.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;colGetUsers.Name" xml:space="preserve">
-    <value>colGetUsers</value>
-  </data>
-  <data name="dgwUsers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="listUsers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="userRefreshCancelButton.Text" xml:space="preserve">
-    <value>Click to cancel the process</value>
-  </data>
-  <data name="&gt;&gt;btnAddGroup.Parent" xml:space="preserve">
-    <value>tlTopPanel</value>
-  </data>
-  <data name="&gt;&gt;bindingServersByGroup.Name" xml:space="preserve">
-    <value>bindingServersByGroup</value>
+  <data name="contentContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
   </data>
   <data name="SplitContainer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;txtFilter.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnAddGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 0</value>
-  </data>
-  <data name="bottomLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SplitContainer2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="TheMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="SplitContainer2.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
-  <data name="&gt;&gt;panelUsersTop.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="GroupIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>groupId</value>
   </data>
-  <data name="&gt;&gt;panelLeft.Parent" xml:space="preserve">
-    <value>contentContainer.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PCName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelRightTop.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblUserFilter.Parent" xml:space="preserve">
-    <value>panelUsersTop</value>
-  </data>
-  <data name="&gt;&gt;bgWorker.Name" xml:space="preserve">
-    <value>bgWorker</value>
-  </data>
-  <data name="lblDetailTS.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;GroupsAndServersData.Type" xml:space="preserve">
-    <value>TSRemoteControl.dsetGroupsAndServers, Datasets.dsetGroupsAndServers.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;tlTopPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dgwUsers.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblUserFilter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 5</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Remote control terminal server user sessions</value>
-  </data>
-  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Exit</value>
-  </data>
-  <data name="&gt;&gt;lblDetailTS.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="dgwServers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;ServerDisplayNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="colCloseSession.MinimumWidth" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;TSName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bottomLeftPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="dgwGroups.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 231</value>
-  </data>
-  <data name="lblUserFilter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 23</value>
-  </data>
-  <data name="&gt;&gt;dgwServers.Parent" xml:space="preserve">
-    <value>bottomLeftPanel</value>
-  </data>
-  <data name="lblGroups.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="TheMenuStrip.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="&gt;&gt;btnAddGroup.Name" xml:space="preserve">
-    <value>btnAddGroup</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GroupIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="GroupNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Configured groups</value>
   </data>
-  <data name="&gt;&gt;topLeftPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelLeft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dgwServers.ToolTip" xml:space="preserve">
+  <metadata name="colEdit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colEdit.HeaderText" xml:space="preserve">
     <value />
   </data>
-  <data name="lblGroups.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="colEdit.ToolTipText" xml:space="preserve">
+    <value>Edit group</value>
   </data>
-  <data name="lblUsersPerServer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblDetailTS.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;lblUsersPerServer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="topLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 263</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;colConnect.Name" xml:space="preserve">
-    <value>colConnect</value>
-  </data>
-  <data name="listUsers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 732</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ServerIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblGroups.Text" xml:space="preserve">
-    <value>Groups of Terminal Servers</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;timerUserRefresh.Name" xml:space="preserve">
-    <value>timerUserRefresh</value>
-  </data>
-  <data name="&gt;&gt;userRefreshProgessBar.Name" xml:space="preserve">
-    <value>userRefreshProgessBar</value>
-  </data>
-  <data name="panelRightTop.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblGroups.Parent" xml:space="preserve">
-    <value>tlTopPanel</value>
-  </data>
-  <data name="&gt;&gt;topLeftPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupsBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>GroupIdDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;listUsers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddServer.Parent" xml:space="preserve">
-    <value>panelTopServers</value>
-  </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="&gt;&gt;lblUsersPerServer.Parent" xml:space="preserve">
-    <value>panelRightTop</value>
-  </data>
-  <data name="&gt;&gt;lblDetailTS.Parent" xml:space="preserve">
-    <value>panelTopServers</value>
-  </data>
-  <data name="&gt;&gt;colServerDelete.Name" xml:space="preserve">
-    <value>colServerDelete</value>
-  </data>
-  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="dgwServers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 433</value>
-  </data>
-  <data name="&gt;&gt;panelUsersTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panelRightTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="listUsers.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="ExportServersFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;File</value>
-  </data>
-  <data name="&gt;&gt;tlTopPanel.Parent" xml:space="preserve">
-    <value>topLeftPanel</value>
-  </data>
-  <data name="panelTopServers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;panelUsersTop.Name" xml:space="preserve">
-    <value>panelUsersTop</value>
-  </data>
-  <data name="ServerNameDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="dgwGroups.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TheMenuStrip.Name" xml:space="preserve">
-    <value>TheMenuStrip</value>
-  </data>
-  <data name="panelUsersTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="SplitContainer2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblDetailTS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelTopServers.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAIAAAAgCAIAAAC3sD5OAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAItJREFUGFc1x+kO
-        wUAYheHvhiypTlshegFtU2WmQrgqJfwQS2yxC+H2nG/MJOfNk0Ph6Nsafqg5eDf6LwryB8b46k713pOf
-        IchvvroS8uQFnDHGkycL0qijkAdCBre7/7MjkW3dbE2is2FQrb2yIIOTLslJF5ilmswxphLPLEiTTMvx
-        hJChFBWaaPwDoTBKfogyRFoAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SplitContainer2.SplitterDistance" type="System.Int32, mscorlib">
-    <value>263</value>
-  </data>
-  <data name="&gt;&gt;panelUsersTop.Parent" xml:space="preserve">
-    <value>panelRight</value>
-  </data>
-  <data name="panelLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 732</value>
-  </data>
-  <data name="lblGroups.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="colMessage.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;lblDetailTS.Name" xml:space="preserve">
-    <value>lblDetailTS</value>
-  </data>
-  <data name="dgwServers.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="dgwUsers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 646</value>
-  </data>
-  <data name="panelUsersTop.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;colServerEdit.Name" xml:space="preserve">
-    <value>colServerEdit</value>
-  </data>
-  <data name="&gt;&gt;listUsers.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;userStatusLabel.Name" xml:space="preserve">
-    <value>userStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;panelRightTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bottomLeftPanel.Name" xml:space="preserve">
-    <value>bottomLeftPanel</value>
-  </data>
-  <data name="&gt;&gt;dgwServers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="UserName.HeaderText" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="btnAddGroup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;UsersData.Name" xml:space="preserve">
-    <value>UsersData</value>
-  </data>
-  <data name="&gt;&gt;contentContainer.Panel2.Name" xml:space="preserve">
-    <value>contentContainer.Panel2</value>
-  </data>
-  <data name="&gt;&gt;dgwGroups.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelRightTop.Name" xml:space="preserve">
-    <value>panelRightTop</value>
-  </data>
-  <data name="&gt;&gt;AboutThisApplicationToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colEdit.Name" xml:space="preserve">
-    <value>colEdit</value>
-  </data>
-  <data name="btnAddServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 0</value>
-  </data>
-  <data name="&gt;&gt;userStatusStrip.Name" xml:space="preserve">
-    <value>userStatusStrip</value>
-  </data>
-  <data name="&gt;&gt;UsersData.Type" xml:space="preserve">
-    <value>TSRemoteControl.dsetUsers, Datasets.dsetUsers.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="SplitContainer2.Panel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;dgwServers.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="lblDetailTS.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;bindingServersByGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgwUsers.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelUsersTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
-  <data name="&gt;&gt;lblUserFilter.Name" xml:space="preserve">
-    <value>lblUserFilter</value>
-  </data>
-  <data name="&gt;&gt;contentContainer.Panel1.Name" xml:space="preserve">
-    <value>contentContainer.Panel1</value>
-  </data>
-  <data name="TheMenuStrip.Text" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="colGetUsers.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblGroups.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 32</value>
-  </data>
-  <data name="lblUserFilter.Text" xml:space="preserve">
-    <value>User name filter:</value>
-  </data>
-  <data name="colConnect.MinimumWidth" type="System.Int32, mscorlib">
+  <data name="colEdit.Width" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="lblUsersPerServer.Text" xml:space="preserve">
-    <value>Users connected to the selected servers</value>
+  <metadata name="colDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colDelete.HeaderText" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;SplitContainer2.Panel2.Name" xml:space="preserve">
-    <value>SplitContainer2.Panel2</value>
+  <data name="colDelete.ToolTipText" xml:space="preserve">
+    <value>Delete group</value>
   </data>
-  <data name="lblDetailTS.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="colDelete.Width" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
-  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>660, 0</value>
-  </data>
-  <data name="lblUsersPerServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;colMessage.Name" xml:space="preserve">
-    <value>colMessage</value>
-  </data>
-  <data name="userStatusStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="colConnect.ToolTipText" xml:space="preserve">
-    <value>Connect to user session</value>
-  </data>
-  <data name="&gt;&gt;bottomLeftPanel.Parent" xml:space="preserve">
-    <value>SplitContainer2.Panel2</value>
-  </data>
-  <data name="dgwServers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
-  <data name="&gt;&gt;txtFilter.Name" xml:space="preserve">
-    <value>txtFilter</value>
-  </data>
-  <data name="btnAddGroup.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="contentContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <metadata name="GroupsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>194, 17</value>
+  </metadata>
+  <metadata name="GroupsAndServersData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dgwGroups.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="userRefreshCancelButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 17</value>
+  <data name="dgwGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
   </data>
   <data name="dgwGroups.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
     <value>Vertical</value>
   </data>
-  <data name="btnAddGroup.ToolTip" xml:space="preserve">
-    <value>Add a new group</value>
+  <data name="dgwGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 231</value>
   </data>
-  <data name="lblUsersPerServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 32</value>
+  <data name="dgwGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="panelRightTop.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;dgwGroups.Name" xml:space="preserve">
+    <value>dgwGroups</value>
+  </data>
+  <data name="&gt;&gt;dgwGroups.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgwGroups.Parent" xml:space="preserve">
+    <value>topLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;dgwGroups.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tlTopPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -690,35 +210,680 @@
         hJChFBWaaPwDoTBKfogyRFoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="panelUsersTop.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="tlTopPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="&gt;&gt;contentContainer.Panel1.Parent" xml:space="preserve">
-    <value>contentContainer</value>
+  <data name="lblGroups.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;dgwUsers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblGroups.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;PCName.Name" xml:space="preserve">
-    <value>PCName</value>
+  <data name="lblGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 32</value>
+  </data>
+  <data name="lblGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblGroups.Text" xml:space="preserve">
+    <value>Groups of Terminal Servers</value>
+  </data>
+  <data name="lblGroups.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblGroups.Name" xml:space="preserve">
+    <value>lblGroups</value>
+  </data>
+  <data name="&gt;&gt;lblGroups.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGroups.Parent" xml:space="preserve">
+    <value>tlTopPanel</value>
+  </data>
+  <data name="&gt;&gt;lblGroups.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAddGroup.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnAddGroup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnAddGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 0</value>
+  </data>
+  <data name="btnAddGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="btnAddGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <metadata name="toolTipsManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>544, 17</value>
+  </metadata>
+  <data name="btnAddGroup.ToolTip" xml:space="preserve">
+    <value>Add a new group</value>
+  </data>
+  <data name="&gt;&gt;btnAddGroup.Name" xml:space="preserve">
+    <value>btnAddGroup</value>
+  </data>
+  <data name="&gt;&gt;btnAddGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddGroup.Parent" xml:space="preserve">
+    <value>tlTopPanel</value>
+  </data>
+  <data name="&gt;&gt;btnAddGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlTopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tlTopPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tlTopPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 32</value>
+  </data>
+  <data name="tlTopPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tlTopPanel.Name" xml:space="preserve">
+    <value>tlTopPanel</value>
+  </data>
+  <data name="&gt;&gt;tlTopPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlTopPanel.Parent" xml:space="preserve">
+    <value>topLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;tlTopPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="topLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="topLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="topLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 263</value>
+  </data>
+  <data name="topLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;topLeftPanel.Name" xml:space="preserve">
+    <value>topLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;topLeftPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;topLeftPanel.Parent" xml:space="preserve">
+    <value>SplitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;topLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel1.Name" xml:space="preserve">
+    <value>SplitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel1.Parent" xml:space="preserve">
+    <value>SplitContainer2</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="colGetUsers.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colGetUsers.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="colGetUsers.MinimumWidth" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="colGetUsers.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="GroupIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>groupId</value>
+  </data>
+  <data name="GroupIdDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ServerIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>serverId</value>
+  </data>
+  <data name="ServerIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ServerNameDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ServerDisplayNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>serverDisplayName</value>
+  </data>
+  <metadata name="colServerEdit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colServerEdit.HeaderText" xml:space="preserve">
+    <value />
   </data>
   <data name="colServerEdit.MinimumWidth" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="topLeftPanel.ToolTip" xml:space="preserve">
+  <data name="colServerEdit.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <metadata name="colServerDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colServerDelete.HeaderText" xml:space="preserve">
     <value />
+  </data>
+  <data name="colServerDelete.MinimumWidth" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="colServerDelete.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <metadata name="bindingServersByGroup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>364, 17</value>
+  </metadata>
+  <data name="dgwServers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgwServers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="dgwServers.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="dgwServers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 433</value>
+  </data>
+  <data name="dgwServers.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgwServers.Name" xml:space="preserve">
+    <value>dgwServers</value>
+  </data>
+  <data name="&gt;&gt;dgwServers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgwServers.Parent" xml:space="preserve">
+    <value>bottomLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;dgwServers.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelTopServers.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAIAAAAgCAIAAAC3sD5OAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAAItJREFUGFc1x+kO
+        wUAYheHvhiypTlshegFtU2WmQrgqJfwQS2yxC+H2nG/MJOfNk0Ph6Nsafqg5eDf6LwryB8b46k713pOf
+        IchvvroS8uQFnDHGkycL0qijkAdCBre7/7MjkW3dbE2is2FQrb2yIIOTLslJF5ilmswxphLPLEiTTMvx
+        hJChFBWaaPwDoTBKfogyRFoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="lblDetailTS.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblDetailTS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblDetailTS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblDetailTS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 32</value>
+  </data>
+  <data name="lblDetailTS.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblDetailTS.Text" xml:space="preserve">
+    <value>Individual Servers in the group</value>
+  </data>
+  <data name="lblDetailTS.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblDetailTS.Name" xml:space="preserve">
+    <value>lblDetailTS</value>
+  </data>
+  <data name="&gt;&gt;lblDetailTS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDetailTS.Parent" xml:space="preserve">
+    <value>panelTopServers</value>
+  </data>
+  <data name="&gt;&gt;lblDetailTS.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAddServer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnAddServer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnAddServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 0</value>
+  </data>
+  <data name="btnAddServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="btnAddServer.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnAddServer.ToolTip" xml:space="preserve">
+    <value>Add a new server</value>
+  </data>
+  <data name="&gt;&gt;btnAddServer.Name" xml:space="preserve">
+    <value>btnAddServer</value>
+  </data>
+  <data name="&gt;&gt;btnAddServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAddServer.Parent" xml:space="preserve">
+    <value>panelTopServers</value>
+  </data>
+  <data name="&gt;&gt;btnAddServer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelTopServers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelTopServers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelTopServers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 32</value>
+  </data>
+  <data name="panelTopServers.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelTopServers.Name" xml:space="preserve">
+    <value>panelTopServers</value>
+  </data>
+  <data name="&gt;&gt;panelTopServers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTopServers.Parent" xml:space="preserve">
+    <value>bottomLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;panelTopServers.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bottomLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="bottomLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bottomLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 465</value>
+  </data>
+  <data name="bottomLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bottomLeftPanel.Name" xml:space="preserve">
+    <value>bottomLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;bottomLeftPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bottomLeftPanel.Parent" xml:space="preserve">
+    <value>SplitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;bottomLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel2.Name" xml:space="preserve">
+    <value>SplitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel2.Parent" xml:space="preserve">
+    <value>SplitContainer2</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SplitContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 732</value>
+  </data>
+  <data name="SplitContainer2.SplitterDistance" type="System.Int32, mscorlib">
+    <value>263</value>
+  </data>
+  <data name="SplitContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Name" xml:space="preserve">
+    <value>SplitContainer2</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.Parent" xml:space="preserve">
+    <value>panelLeft</value>
+  </data>
+  <data name="&gt;&gt;SplitContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 732</value>
+  </data>
+  <data name="panelLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelLeft.Name" xml:space="preserve">
+    <value>panelLeft</value>
+  </data>
+  <data name="&gt;&gt;panelLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelLeft.Parent" xml:space="preserve">
+    <value>contentContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;panelLeft.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel1.Name" xml:space="preserve">
+    <value>contentContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel1.Parent" xml:space="preserve">
+    <value>contentContainer</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="colConnect.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colConnect.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="colConnect.MinimumWidth" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="colConnect.ToolTipText" xml:space="preserve">
+    <value>Connect to user session</value>
+  </data>
+  <data name="colConnect.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="TSName.HeaderText" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <metadata name="colMessage.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colMessage.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="colMessage.MinimumWidth" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="colMessage.ToolTipText" xml:space="preserve">
+    <value>Send a message to the user</value>
+  </data>
+  <data name="colMessage.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="UserName.HeaderText" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserId.HeaderText" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="UserState.HeaderText" xml:space="preserve">
+    <value>Connection state</value>
+  </data>
+  <data name="PCName.HeaderText" xml:space="preserve">
+    <value>Client PC</value>
+  </data>
+  <metadata name="colCloseSession.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colCloseSession.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="colCloseSession.MinimumWidth" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="colCloseSession.ToolTipText" xml:space="preserve">
+    <value>Close the session of the user</value>
+  </data>
+  <data name="colCloseSession.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <metadata name="bindingUsers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1297, 17</value>
+  </metadata>
+  <metadata name="UsersData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>833, 17</value>
+  </metadata>
+  <data name="dgwUsers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgwUsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 96</value>
+  </data>
+  <data name="dgwUsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 614</value>
+  </data>
+  <data name="dgwUsers.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgwUsers.Name" xml:space="preserve">
+    <value>dgwUsers</value>
+  </data>
+  <data name="&gt;&gt;dgwUsers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgwUsers.Parent" xml:space="preserve">
     <value>panelRight</value>
   </data>
-  <data name="colEdit.ToolTipText" xml:space="preserve">
-    <value>Edit group</value>
+  <data name="&gt;&gt;dgwUsers.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;userRefreshProgessBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblHowToFilter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="dlgSaveFile.Filter" xml:space="preserve">
-    <value>Config file |*.config</value>
+  <data name="lblHowToFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblHowToFilter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHowToFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblHowToFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 32</value>
+  </data>
+  <data name="lblHowToFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblHowToFilter.Text" xml:space="preserve">
+    <value>Click any column header with the right button to filter the contents of the connections grid</value>
+  </data>
+  <data name="lblHowToFilter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblHowToFilter.Name" xml:space="preserve">
+    <value>lblHowToFilter</value>
+  </data>
+  <data name="&gt;&gt;lblHowToFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHowToFilter.Parent" xml:space="preserve">
+    <value>panelHowToFilter</value>
+  </data>
+  <data name="&gt;&gt;lblHowToFilter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelHowToFilter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelHowToFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 64</value>
+  </data>
+  <data name="panelHowToFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 32</value>
+  </data>
+  <data name="panelHowToFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;panelHowToFilter.Name" xml:space="preserve">
+    <value>panelHowToFilter</value>
+  </data>
+  <data name="&gt;&gt;panelHowToFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHowToFilter.Parent" xml:space="preserve">
+    <value>panelRight</value>
+  </data>
+  <data name="&gt;&gt;panelHowToFilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtFilter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 6</value>
+  </data>
+  <data name="txtFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>572, 20</value>
+  </data>
+  <data name="txtFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtFilter.Name" xml:space="preserve">
+    <value>txtFilter</value>
+  </data>
+  <data name="&gt;&gt;txtFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFilter.Parent" xml:space="preserve">
+    <value>panelUsersTop</value>
+  </data>
+  <data name="&gt;&gt;txtFilter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblUserFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 5</value>
+  </data>
+  <data name="lblUserFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="lblUserFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblUserFilter.Text" xml:space="preserve">
+    <value>User name filter:</value>
+  </data>
+  <data name="lblUserFilter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblUserFilter.Name" xml:space="preserve">
+    <value>lblUserFilter</value>
+  </data>
+  <data name="&gt;&gt;lblUserFilter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUserFilter.Parent" xml:space="preserve">
+    <value>panelUsersTop</value>
+  </data>
+  <data name="&gt;&gt;lblUserFilter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelUsersTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelUsersTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="panelUsersTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 32</value>
+  </data>
+  <data name="panelUsersTop.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="panelUsersTop.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelUsersTop.Name" xml:space="preserve">
+    <value>panelUsersTop</value>
+  </data>
+  <data name="&gt;&gt;panelUsersTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelUsersTop.Parent" xml:space="preserve">
+    <value>panelRight</value>
+  </data>
+  <data name="&gt;&gt;panelUsersTop.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="userStatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1046, 17</value>
+  </metadata>
+  <data name="userStatusLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="userStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 17</value>
+  </data>
+  <data name="userStatusLabel.Text" xml:space="preserve">
+    <value>Number of users:</value>
+  </data>
+  <data name="userStatusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="userRefreshProgessBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 16</value>
+  </data>
+  <data name="userRefreshCancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 17</value>
+  </data>
+  <data name="userRefreshCancelButton.Text" xml:space="preserve">
+    <value>Click to cancel the process</value>
+  </data>
+  <data name="userStatusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 710</value>
+  </data>
+  <data name="userStatusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 22</value>
+  </data>
+  <data name="userStatusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;userStatusStrip.Name" xml:space="preserve">
+    <value>userStatusStrip</value>
+  </data>
+  <data name="&gt;&gt;userStatusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userStatusStrip.Parent" xml:space="preserve">
+    <value>panelRight</value>
+  </data>
+  <data name="&gt;&gt;userStatusStrip.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="panelRightTop.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -729,53 +894,263 @@
         hJChFBWaaPwDoTBKfogyRFoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="lblUserFilter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="lblUsersPerServer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="dgwGroups.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
+  <data name="lblUsersPerServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="TheMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1044, 24</value>
-  </data>
-  <data name="&gt;&gt;ServerDisplayNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>ServerDisplayNameDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="GroupIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;bottomLeftPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tlTopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;dgwGroups.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SplitContainer2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblUsersPerServer.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;lblDetailTS.Type" xml:space="preserve">
+  <data name="lblUsersPerServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>660, 32</value>
+  </data>
+  <data name="lblUsersPerServer.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblUsersPerServer.Text" xml:space="preserve">
+    <value>Users connected to the selected servers</value>
+  </data>
+  <data name="lblUsersPerServer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblUsersPerServer.Name" xml:space="preserve">
+    <value>lblUsersPerServer</value>
+  </data>
+  <data name="&gt;&gt;lblUsersPerServer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUsersPerServer.Parent" xml:space="preserve">
+    <value>panelRightTop</value>
+  </data>
+  <data name="&gt;&gt;lblUsersPerServer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnRefresh.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnRefresh.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 0</value>
+  </data>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnRefresh.ToolTip" xml:space="preserve">
+    <value>Refresh users</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>panelRightTop</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelRightTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelRightTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelRightTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 32</value>
+  </data>
+  <data name="panelRightTop.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelRightTop.Name" xml:space="preserve">
+    <value>panelRightTop</value>
+  </data>
+  <data name="&gt;&gt;panelRightTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelRightTop.Parent" xml:space="preserve">
+    <value>panelRight</value>
+  </data>
+  <data name="&gt;&gt;panelRightTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="listUsers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="listUsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="listUsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 732</value>
+  </data>
+  <data name="listUsers.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;listUsers.Name" xml:space="preserve">
+    <value>listUsers</value>
+  </data>
+  <data name="&gt;&gt;listUsers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listUsers.Parent" xml:space="preserve">
+    <value>panelRight</value>
+  </data>
+  <data name="&gt;&gt;listUsers.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="panelRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;txtFilter.Parent" xml:space="preserve">
-    <value>panelUsersTop</value>
+  <data name="panelRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="lblGroups.ToolTip" xml:space="preserve">
-    <value />
+  <data name="panelRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>692, 732</value>
   </data>
-  <data name="&gt;&gt;colConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panelRight.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="colConnect.HeaderText" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;panelRight.Name" xml:space="preserve">
+    <value>panelRight</value>
   </data>
-  <data name="&gt;&gt;dgwGroups.Parent" xml:space="preserve">
-    <value>topLeftPanel</value>
+  <data name="&gt;&gt;panelRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelRight.Parent" xml:space="preserve">
+    <value>contentContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;panelRight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel2.Name" xml:space="preserve">
+    <value>contentContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel2.Parent" xml:space="preserve">
+    <value>contentContainer</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="contentContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1044, 732</value>
+  </data>
+  <data name="contentContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>348</value>
+  </data>
+  <data name="contentContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Name" xml:space="preserve">
+    <value>contentContainer</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;contentContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="TheMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="ImportServersFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="ImportServersFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Import servers file</value>
+  </data>
+  <data name="ExportServersFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="ExportServersFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>E&amp;xport servers file</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="AboutThisApplicationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="AboutThisApplicationToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;About this application</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="TheMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="TheMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1044, 24</value>
+  </data>
+  <data name="TheMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TheMenuStrip.Text" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;TheMenuStrip.Name" xml:space="preserve">
+    <value>TheMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;TheMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TheMenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TheMenuStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="timerUserRefresh.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>688, 17</value>
+  </metadata>
+  <metadata name="bgWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>940, 17</value>
+  </metadata>
+  <metadata name="dlgOpenFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1179, 17</value>
+  </metadata>
+  <data name="dlgOpenFile.Filter" xml:space="preserve">
+    <value>Config file | *.config</value>
+  </data>
+  <metadata name="dlgSaveFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>152, 56</value>
+  </metadata>
+  <data name="dlgSaveFile.Filter" xml:space="preserve">
+    <value>Config file |*.config</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1044, 756</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1909,631 +2284,241 @@
         //////////////////////////////////8=
 </value>
   </data>
-  <data name="bottomLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 465</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Remote control terminal server user sessions</value>
   </data>
-  <data name="contentContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1044, 732</value>
+  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>GroupIdDataGridViewTextBoxColumn</value>
   </data>
-  <data name="&gt;&gt;userStatusStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panelRightTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 32</value>
-  </data>
-  <data name="btnAddServer.ToolTip" xml:space="preserve">
-    <value>Add a new server</value>
-  </data>
-  <data name="&gt;&gt;topLeftPanel.Parent" xml:space="preserve">
-    <value>SplitContainer2.Panel1</value>
-  </data>
-  <data name="userStatusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="SplitContainer2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tlTopPanel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;bindingUsers.Name" xml:space="preserve">
-    <value>bindingUsers</value>
-  </data>
-  <data name="tlTopPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="lblDetailTS.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;lblGroups.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnAddServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="userStatusStrip.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="dgwServers.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="&gt;&gt;panelRight.Name" xml:space="preserve">
-    <value>panelRight</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;colCloseSession.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userStatusStrip.Parent" xml:space="preserve">
-    <value>panelRight</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
-    <value>btnRefresh</value>
-  </data>
-  <data name="GroupIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>groupId</value>
-  </data>
-  <data name="&gt;&gt;dgwGroups.Name" xml:space="preserve">
-    <value>dgwGroups</value>
-  </data>
-  <data name="colCloseSession.Width" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="lblDetailTS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 32</value>
-  </data>
-  <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
-  </data>
-  <data name="colServerDelete.MinimumWidth" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;btnAddGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ExitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panelLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;dlgSaveFile.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="userStatusLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;panelRight.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dlgOpenFile.Name" xml:space="preserve">
-    <value>dlgOpenFile</value>
-  </data>
-  <data name="panelRight.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="colMessage.MinimumWidth" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;toolTipsManager.Name" xml:space="preserve">
-    <value>toolTipsManager</value>
-  </data>
-  <data name="&gt;&gt;lblUsersPerServer.Name" xml:space="preserve">
-    <value>lblUsersPerServer</value>
-  </data>
-  <data name="&gt;&gt;UserState.Type" xml:space="preserve">
+  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ServerIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>serverId</value>
-  </data>
-  <data name="&gt;&gt;btnAddGroup.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblGroups.Name" xml:space="preserve">
-    <value>lblGroups</value>
-  </data>
-  <data name="SplitContainer2.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="btnRefresh.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="txtFilter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="txtFilter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 6</value>
-  </data>
-  <data name="colEdit.HeaderText" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;GroupNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>GroupNameDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;GroupNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelTopServers.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;colEdit.Name" xml:space="preserve">
+    <value>colEdit</value>
   </data>
-  <data name="&gt;&gt;lblGroups.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblUserFilter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmMain</value>
-  </data>
-  <data name="panelLeft.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="colCloseSession.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SplitContainer2.Panel2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;dgwServers.Name" xml:space="preserve">
-    <value>dgwServers</value>
-  </data>
-  <data name="ServerDisplayNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>serverDisplayName</value>
-  </data>
-  <data name="&gt;&gt;colMessage.Type" xml:space="preserve">
+  <data name="&gt;&gt;colEdit.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;contentContainer.Panel2.Parent" xml:space="preserve">
-    <value>contentContainer</value>
+  <data name="&gt;&gt;colDelete.Name" xml:space="preserve">
+    <value>colDelete</value>
   </data>
-  <data name="colDelete.ToolTipText" xml:space="preserve">
-    <value>Delete group</value>
+  <data name="&gt;&gt;colDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;FileToolStripMenuItem.Name" xml:space="preserve">
-    <value>FileToolStripMenuItem</value>
+  <data name="&gt;&gt;GroupsBindingSource.Name" xml:space="preserve">
+    <value>GroupsBindingSource</value>
   </data>
-  <data name="&gt;&gt;UserId.Name" xml:space="preserve">
-    <value>UserId</value>
-  </data>
-  <data name="&gt;&gt;TheMenuStrip.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelLeft.Name" xml:space="preserve">
-    <value>panelLeft</value>
-  </data>
-  <data name="panelRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 732</value>
-  </data>
-  <data name="colServerDelete.Width" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;contentContainer.Name" xml:space="preserve">
-    <value>contentContainer</value>
-  </data>
-  <data name="&gt;&gt;UserName.Name" xml:space="preserve">
-    <value>UserName</value>
-  </data>
-  <data name="&gt;&gt;panelTopServers.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelTopServers.Parent" xml:space="preserve">
-    <value>bottomLeftPanel</value>
-  </data>
-  <data name="&gt;&gt;panelRight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="contentContainer.SplitterDistance" type="System.Int32, mscorlib">
-    <value>348</value>
-  </data>
-  <data name="&gt;&gt;panelRight.Parent" xml:space="preserve">
-    <value>contentContainer.Panel2</value>
-  </data>
-  <data name="&gt;&gt;panelTopServers.Name" xml:space="preserve">
-    <value>panelTopServers</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Panel1.Parent" xml:space="preserve">
-    <value>SplitContainer2</value>
-  </data>
-  <data name="&gt;&gt;TSName.Name" xml:space="preserve">
-    <value>TSName</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Name" xml:space="preserve">
-    <value>SplitContainer2</value>
-  </data>
-  <data name="lblDetailTS.Text" xml:space="preserve">
-    <value>Individual Servers in the group</value>
-  </data>
-  <data name="btnAddServer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="dgwGroups.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tlTopPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="dgwGroups.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;contentContainer.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;SplitContainer2.Parent" xml:space="preserve">
-    <value>panelLeft</value>
-  </data>
-  <data name="&gt;&gt;toolTipsManager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ExportServersFileToolStripMenuItem.Name" xml:space="preserve">
-    <value>ExportServersFileToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;dgwUsers.Name" xml:space="preserve">
-    <value>dgwUsers</value>
-  </data>
-  <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
-    <value>HelpToolStripMenuItem</value>
-  </data>
-  <data name="panelTopServers.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;GroupsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GroupsAndServersData.Name" xml:space="preserve">
     <value>GroupsAndServersData</value>
   </data>
-  <data name="panelRight.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;GroupsAndServersData.Type" xml:space="preserve">
+    <value>TSRemoteControl.dsetGroupsAndServers, Datasets.dsetGroupsAndServers.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;colGetUsers.Name" xml:space="preserve">
+    <value>colGetUsers</value>
+  </data>
+  <data name="&gt;&gt;colGetUsers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>GroupIdDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ServerIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>ServerIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;ServerIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ServerNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>ServerNameDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;ServerNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;contentContainer.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ServerDisplayNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>ServerDisplayNameDataGridViewTextBoxColumn</value>
   </data>
-  <data name="contentContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
+  <data name="&gt;&gt;ServerDisplayNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PCName.HeaderText" xml:space="preserve">
-    <value>Client PC</value>
+  <data name="&gt;&gt;colServerEdit.Name" xml:space="preserve">
+    <value>colServerEdit</value>
   </data>
-  <data name="&gt;&gt;contentContainer.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;colServerEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;contentContainer.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="colMessage.Width" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="ServerIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;timerUserRefresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tlTopPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="userStatusLabel.Text" xml:space="preserve">
-    <value>Number of users:</value>
-  </data>
-  <data name="colDelete.Width" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;btnAddServer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="TSName.HeaderText" xml:space="preserve">
-    <value>Server</value>
-  </data>
-  <data name="btnRefresh.ToolTip" xml:space="preserve">
-    <value>Refresh users</value>
-  </data>
-  <data name="btnAddServer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="GroupIdDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lblGroups.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="panelLeft.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;contentContainer.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bottomLeftPanel.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;colServerDelete.Name" xml:space="preserve">
+    <value>colServerDelete</value>
   </data>
   <data name="&gt;&gt;colServerDelete.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="contentContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;bindingServersByGroup.Name" xml:space="preserve">
+    <value>bindingServersByGroup</value>
   </data>
-  <data name="UserState.HeaderText" xml:space="preserve">
-    <value>Connection state</value>
+  <data name="&gt;&gt;bindingServersByGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="colEdit.Width" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="&gt;&gt;colConnect.Name" xml:space="preserve">
+    <value>colConnect</value>
+  </data>
+  <data name="&gt;&gt;colConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSName.Name" xml:space="preserve">
+    <value>TSName</value>
+  </data>
+  <data name="&gt;&gt;TSName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colMessage.Name" xml:space="preserve">
+    <value>colMessage</value>
+  </data>
+  <data name="&gt;&gt;colMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserName.Name" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="&gt;&gt;UserName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserId.Name" xml:space="preserve">
+    <value>UserId</value>
   </data>
   <data name="&gt;&gt;UserId.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ImportServersFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Import servers file</value>
+  <data name="&gt;&gt;UserState.Name" xml:space="preserve">
+    <value>UserState</value>
   </data>
-  <data name="listUsers.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;UserState.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="colCloseSession.ToolTipText" xml:space="preserve">
-    <value>Close the session of the user</value>
+  <data name="&gt;&gt;PCName.Name" xml:space="preserve">
+    <value>PCName</value>
   </data>
-  <data name="colConnect.Width" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="&gt;&gt;PCName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblUsersPerServer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="&gt;&gt;colCloseSession.Name" xml:space="preserve">
+    <value>colCloseSession</value>
   </data>
-  <data name="txtFilter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>572, 20</value>
+  <data name="&gt;&gt;colCloseSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="colGetUsers.Width" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="&gt;&gt;bindingUsers.Name" xml:space="preserve">
+    <value>bindingUsers</value>
   </data>
-  <data name="&gt;&gt;tlTopPanel.Name" xml:space="preserve">
-    <value>tlTopPanel</value>
+  <data name="&gt;&gt;bindingUsers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TheMenuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;UsersData.Name" xml:space="preserve">
+    <value>UsersData</value>
   </data>
-  <data name="userStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 17</value>
+  <data name="&gt;&gt;UsersData.Type" xml:space="preserve">
+    <value>TSRemoteControl.dsetUsers, Datasets.dsetUsers.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="txtFilter.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;userStatusLabel.Name" xml:space="preserve">
+    <value>userStatusLabel</value>
   </data>
-  <data name="lblGroups.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;userStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="contentContainer.Panel2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;userRefreshProgessBar.Name" xml:space="preserve">
+    <value>userRefreshProgessBar</value>
   </data>
-  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+  <data name="&gt;&gt;userRefreshProgessBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;HelpToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;userRefreshCancelButton.Name" xml:space="preserve">
+    <value>userRefreshCancelButton</value>
+  </data>
+  <data name="&gt;&gt;userRefreshCancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTipsManager.Name" xml:space="preserve">
+    <value>toolTipsManager</value>
+  </data>
+  <data name="&gt;&gt;toolTipsManager.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FileToolStripMenuItem.Name" xml:space="preserve">
+    <value>FileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ImportServersFileToolStripMenuItem.Name" xml:space="preserve">
     <value>ImportServersFileToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;UserName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bottomLeftPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1044, 756</value>
-  </data>
-  <data name="colServerEdit.Width" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="AboutThisApplicationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="&gt;&gt;colDelete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
-    <value>panelRightTop</value>
-  </data>
-  <data name="&gt;&gt;lblUsersPerServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="userStatusStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 22</value>
-  </data>
-  <data name="&gt;&gt;txtFilter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colServerEdit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="colServerEdit.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GroupIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>groupId</value>
-  </data>
-  <data name="&gt;&gt;bindingUsers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;ImportServersFileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExportServersFileToolStripMenuItem.Name" xml:space="preserve">
+    <value>ExportServersFileToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;ExportServersFileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>GroupIdDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;ExitToolStripMenuItem.Name" xml:space="preserve">
+    <value>ExitToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;panelRightTop.Parent" xml:space="preserve">
-    <value>panelRight</value>
+  <data name="&gt;&gt;ExitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="UserId.HeaderText" xml:space="preserve">
-    <value>User ID</value>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
+    <value>HelpToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;dlgSaveFile.Name" xml:space="preserve">
-    <value>dlgSaveFile</value>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblUsersPerServer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;AboutThisApplicationToolStripMenuItem.Name" xml:space="preserve">
+    <value>AboutThisApplicationToolStripMenuItem</value>
   </data>
-  <data name="panelRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;AboutThisApplicationToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;userStatusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;timerUserRefresh.Name" xml:space="preserve">
+    <value>timerUserRefresh</value>
   </data>
-  <data name="&gt;&gt;lblUserFilter.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;timerUserRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;colGetUsers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dgwUsers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 64</value>
-  </data>
-  <data name="btnRefresh.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;GroupIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="topLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="colMessage.ToolTipText" xml:space="preserve">
-    <value>Send a message to the user</value>
-  </data>
-  <data name="&gt;&gt;GroupsBindingSource.Name" xml:space="preserve">
-    <value>GroupsBindingSource</value>
-  </data>
-  <data name="&gt;&gt;userRefreshCancelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnAddGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
-  </data>
-  <data name="&gt;&gt;colEdit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="contentContainer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tlTopPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="panelUsersTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 32</value>
-  </data>
-  <data name="colDelete.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="topLeftPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tlTopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 32</value>
-  </data>
-  <data name="&gt;&gt;contentContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtFilter.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnAddServer.Name" xml:space="preserve">
-    <value>btnAddServer</value>
-  </data>
-  <data name="&gt;&gt;GroupNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>GroupNameDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;listUsers.Parent" xml:space="preserve">
-    <value>panelRight</value>
-  </data>
-  <data name="lblUserFilter.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="contentContainer.Panel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;TheMenuStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bottomLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;colCloseSession.Name" xml:space="preserve">
-    <value>colCloseSession</value>
-  </data>
-  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Help</value>
+  <data name="&gt;&gt;bgWorker.Name" xml:space="preserve">
+    <value>bgWorker</value>
   </data>
   <data name="&gt;&gt;bgWorker.Type" xml:space="preserve">
     <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ExitToolStripMenuItem.Name" xml:space="preserve">
-    <value>ExitToolStripMenuItem</value>
+  <data name="&gt;&gt;dlgOpenFile.Name" xml:space="preserve">
+    <value>dlgOpenFile</value>
   </data>
-  <metadata name="GroupsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>194, 17</value>
-  </metadata>
-  <metadata name="userStatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1046, 17</value>
-  </metadata>
-  <metadata name="toolTipsManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>544, 17</value>
-  </metadata>
-  <metadata name="GroupsAndServersData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="colCloseSession.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colGetUsers.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="bindingUsers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1297, 17</value>
-  </metadata>
-  <metadata name="colDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colEdit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colMessage.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dlgSaveFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>152, 56</value>
-  </metadata>
-  <metadata name="UsersData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>833, 17</value>
-  </metadata>
-  <metadata name="dlgOpenFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1179, 17</value>
-  </metadata>
-  <metadata name="colConnect.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="bindingServersByGroup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>364, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TheMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="timerUserRefresh.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>688, 17</value>
-  </metadata>
-  <metadata name="colServerEdit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colServerDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="bgWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>940, 17</value>
-  </metadata>
+  <data name="&gt;&gt;dlgOpenFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgSaveFile.Name" xml:space="preserve">
+    <value>dlgSaveFile</value>
+  </data>
+  <data name="&gt;&gt;dlgSaveFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="GroupNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Grupos configurados</value>
+  </data>
+  <data name="colEdit.ToolTipText" xml:space="preserve">
+    <value>Editar grupo</value>
+  </data>
+  <data name="colDelete.ToolTipText" xml:space="preserve">
+    <value>Eliminar grupo</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tlTopPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -127,6 +136,12 @@
         hJChFBWaaPwDoTBKfogyRFoAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="lblGroups.Text" xml:space="preserve">
+    <value>Grupo de Servidores de Terminal</value>
+  </data>
+  <data name="btnAddGroup.ToolTip" xml:space="preserve">
+    <value>Añadir un nuevo grupo</value>
+  </data>
   <data name="panelTopServers.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAIAAAAgCAIAAAC3sD5OAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -135,6 +150,48 @@
         IchvvroS8uQFnDHGkycL0qijkAdCBre7/7MjkW3dbE2is2FQrb2yIIOTLslJF5ilmswxphLPLEiTTMvx
         hJChFBWaaPwDoTBKfogyRFoAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="lblDetailTS.Text" xml:space="preserve">
+    <value>Servidores en el grupo</value>
+  </data>
+  <data name="btnAddServer.ToolTip" xml:space="preserve">
+    <value>Añadir nuevo servidor</value>
+  </data>
+  <data name="colConnect.ToolTipText" xml:space="preserve">
+    <value>Conectar a la sesión del usuario</value>
+  </data>
+  <data name="TSName.HeaderText" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="colMessage.ToolTipText" xml:space="preserve">
+    <value>Enviar un mensaje al usuario</value>
+  </data>
+  <data name="UserName.HeaderText" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="UserState.HeaderText" xml:space="preserve">
+    <value>Estado de la conexión</value>
+  </data>
+  <data name="PCName.HeaderText" xml:space="preserve">
+    <value>PC Cliente</value>
+  </data>
+  <data name="colCloseSession.ToolTipText" xml:space="preserve">
+    <value>Cerrar la sesión del usuario</value>
+  </data>
+  <data name="lblHowToFilter.Text" xml:space="preserve">
+    <value>Haz clic con el botón derecho del ratón en la cabecera de cualquier columna para filtrar el contenido de la tabla de conexiones</value>
+  </data>
+  <data name="lblUserFilter.Text" xml:space="preserve">
+    <value>Filtro de usuario:</value>
+  </data>
+  <data name="userStatusLabel.Text" xml:space="preserve">
+    <value>Número de usuarios:</value>
+  </data>
+  <data name="userRefreshCancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 17</value>
+  </data>
+  <data name="userRefreshCancelButton.Text" xml:space="preserve">
+    <value>Clicar para cancelar el proceso</value>
   </data>
   <data name="panelRightTop.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -145,11 +202,56 @@
         hJChFBWaaPwDoTBKfogyRFoAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="lblUsersPerServer.Text" xml:space="preserve">
+    <value>Usuarios conectados a los servidores seleccionados</value>
+  </data>
+  <data name="btnRefresh.ToolTip" xml:space="preserve">
+    <value>Refescar usuarios</value>
+  </data>
+  <data name="TheMenuStrip.Text" xml:space="preserve">
+    <value>MenuPrincipal</value>
+  </data>
   <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
   </data>
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Archivo</value>
+  </data>
+  <data name="ImportServersFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="ImportServersFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Importar fichero de servidores</value>
+  </data>
+  <data name="ExportServersFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="ExportServersFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Exportar fichero de servidores</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Salir</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>A&amp;yuda</value>
+  </data>
+  <data name="AboutThisApplicationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="AboutThisApplicationToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Acerca de esta aplicación</value>
+  </data>
+  <data name="dlgOpenFile.Filter" xml:space="preserve">
+    <value>Fichero de configuración|*.config</value>
+  </data>
+  <data name="dlgSaveFile.Filter" xml:space="preserve">
+    <value>Fichero de configuración|*.config</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1285,86 +1387,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Control remoto de sesiones de terminal server</value>
-  </data>
-  <data name="AboutThisApplicationToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Acerca de esta aplicación</value>
-  </data>
-  <data name="btnAddGroup.ToolTip" xml:space="preserve">
-    <value>Añadir un nuevo grupo</value>
-  </data>
-  <data name="btnAddServer.ToolTip" xml:space="preserve">
-    <value>Añadir nuevo servidor</value>
-  </data>
-  <data name="btnRefresh.ToolTip" xml:space="preserve">
-    <value>Refescar usuarios</value>
-  </data>
-  <data name="colCloseSession.ToolTipText" xml:space="preserve">
-    <value>Cerrar la sesión del usuario</value>
-  </data>
-  <data name="colConnect.ToolTipText" xml:space="preserve">
-    <value>Conectar a la sesión del usuario</value>
-  </data>
-  <data name="colDelete.ToolTipText" xml:space="preserve">
-    <value>Eliminar grupo</value>
-  </data>
-  <data name="colEdit.ToolTipText" xml:space="preserve">
-    <value>Editar grupo</value>
-  </data>
-  <data name="colMessage.ToolTipText" xml:space="preserve">
-    <value>Enviar un mensaje al usuario</value>
-  </data>
-  <data name="dlgOpenFile.Filter" xml:space="preserve">
-    <value>Fichero de configuración|*.config</value>
-  </data>
-  <data name="dlgSaveFile.Filter" xml:space="preserve">
-    <value>Fichero de configuración|*.config</value>
-  </data>
-  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Salir</value>
-  </data>
-  <data name="ExportServersFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Exportar fichero de servidores</value>
-  </data>
-  <data name="GroupNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Grupos configurados</value>
-  </data>
-  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
-    <value>A&amp;yuda</value>
-  </data>
-  <data name="ImportServersFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Importar fichero de servidores</value>
-  </data>
-  <data name="lblDetailTS.Text" xml:space="preserve">
-    <value>Servidores en el grupo</value>
-  </data>
-  <data name="lblGroups.Text" xml:space="preserve">
-    <value>Grupo de Servidores de Terminal</value>
-  </data>
-  <data name="lblUserFilter.Text" xml:space="preserve">
-    <value>Filtro de usuario:</value>
-  </data>
-  <data name="lblUsersPerServer.Text" xml:space="preserve">
-    <value>Usuarios conectados a los servidores seleccionados</value>
-  </data>
-  <data name="PCName.HeaderText" xml:space="preserve">
-    <value>PC Cliente</value>
-  </data>
-  <data name="TheMenuStrip.Text" xml:space="preserve">
-    <value>MenuPrincipal</value>
-  </data>
-  <data name="TSName.HeaderText" xml:space="preserve">
-    <value>Servidor</value>
-  </data>
-  <data name="UserName.HeaderText" xml:space="preserve">
-    <value>Usuario</value>
-  </data>
-  <data name="userRefreshCancelButton.Text" xml:space="preserve">
-    <value>Clicar para cancelar el proceso</value>
-  </data>
-  <data name="UserState.HeaderText" xml:space="preserve">
-    <value>Estado de la conexión</value>
-  </data>
-  <data name="userStatusLabel.Text" xml:space="preserve">
-    <value>Número de usuarios:</value>
   </data>
 </root>

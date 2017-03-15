@@ -225,9 +225,10 @@
     Private Sub dgwUsers_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgwUsers.CellClick
         Select Case e.ColumnIndex
             Case USER_CONNECT_CELL
-                TerminalServerCommands.connectToTSUser(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
-                                                       dgwUsers.Rows(e.RowIndex).Cells("UserId").Value)
-
+                If e.RowIndex >= 0 Then
+                    TerminalServerCommands.connectToTSUser(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
+                                                           dgwUsers.Rows(e.RowIndex).Cells("UserId").Value)
+                End If
             Case USER_CLOSE_SESSION
                 If e.RowIndex >= 0 Then
                     If TerminalServerCommands.closeUserSession(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
@@ -322,6 +323,8 @@
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Dim filterManager As New DgvFilterPopup.DgvFilterManager(dgwUsers)
 
         If System.IO.File.Exists(My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\TSRemoteControl.config") Then
             GroupsAndServersData.ReadXml(My.Computer.FileSystem.SpecialDirectories.MyDocuments & "\TSRemoteControl.config")
