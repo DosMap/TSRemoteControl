@@ -108,7 +108,9 @@
     End Function
 
 
-    Public Shared Function sendMessageToUser(userLists As Dictionary(Of String, List(Of Integer)), messageText As String, messageSender As String) As Boolean
+    Public Shared Function sendMessageToUser(userLists As Dictionary(Of String, List(Of Integer)),
+                                             messageText As String,
+                                             messageSender As String) As Boolean
         Dim retVal As Boolean
 
         Try
@@ -134,7 +136,10 @@
         Return retVal
     End Function
 
-    Public Shared Function sendMessageToUser(ByVal tsName As String, userId As Integer, messageText As String, messageSender As String) As Boolean
+    Public Shared Function sendMessageToUser(ByVal tsName As String,
+                                             ByVal userId As Integer,
+                                             ByVal messageText As String,
+                                             ByVal messageSender As String) As Boolean
         Dim retVal As Boolean
 
         Try
@@ -161,5 +166,43 @@
 
         Return retVal
     End Function
+
+    Public Shared Function ListProcessesOfUser(ByVal tsName As String, userId As Integer) As List(Of ProcessInfo)
+        Dim manager As Cassia.ITerminalServicesManager = New Cassia.TerminalServicesManager()
+        Dim processList As New List(Of ProcessInfo)
+
+        Using server As Cassia.ITerminalServer = manager.GetRemoteServer(tsName)
+            server.Open()
+
+            Dim procList = server.GetSession(userId).GetProcesses()
+            For Each proc In procList
+                processList.Add(New ProcessInfo(proc.Server.ServerName, proc.SessionId, proc.ProcessId, proc.ProcessName))
+            Next
+            server.Close()
+        End Using
+
+        Return processList
+    End Function
+
+    Public Shared Function KillProcess(ByVal tsName As String, sessionId As Integer, processId As Integer) As Boolean
+        Dim manager As Cassia.ITerminalServicesManager = New Cassia.TerminalServicesManager()
+        Dim result As Boolean = False
+
+        Try
+            Using server As Cassia.ITerminalServer = manager.GetRemoteServer(tsName)
+                server.Open()
+
+                server.GetProcess(processId).Kill()
+
+                server.Close()
+            End Using
+            result = True
+        Catch ex As Exception
+            result = False
+        End Try
+
+        Return result
+    End Function
+
 
 End Class

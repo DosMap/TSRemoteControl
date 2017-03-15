@@ -53,14 +53,6 @@ Partial Class frmMain
         Me.btnAddServer = New System.Windows.Forms.Button()
         Me.panelRight = New System.Windows.Forms.Panel()
         Me.dgwUsers = New System.Windows.Forms.DataGridView()
-        Me.colConnect = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.TSName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.bindingUsers = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsersData = New TSRemoteControl.dsetUsers()
         Me.panelHowToFilter = New System.Windows.Forms.Panel()
@@ -88,6 +80,14 @@ Partial Class frmMain
         Me.bgWorker = New System.ComponentModel.BackgroundWorker()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
         Me.dlgSaveFile = New System.Windows.Forms.SaveFileDialog()
+        Me.colConnect = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TSName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.contentContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.contentContainer.Panel1.SuspendLayout()
         Me.contentContainer.Panel2.SuspendLayout()
@@ -366,66 +366,6 @@ Partial Class frmMain
         Me.dgwUsers.ReadOnly = True
         Me.dgwUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         '
-        'colConnect
-        '
-        Me.colConnect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        resources.ApplyResources(Me.colConnect, "colConnect")
-        Me.colConnect.Name = "colConnect"
-        Me.colConnect.ReadOnly = True
-        Me.colConnect.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        '
-        'TSName
-        '
-        Me.TSName.DataPropertyName = "TSName"
-        resources.ApplyResources(Me.TSName, "TSName")
-        Me.TSName.Name = "TSName"
-        Me.TSName.ReadOnly = True
-        '
-        'colMessage
-        '
-        Me.colMessage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        resources.ApplyResources(Me.colMessage, "colMessage")
-        Me.colMessage.Name = "colMessage"
-        Me.colMessage.ReadOnly = True
-        Me.colMessage.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        '
-        'UserName
-        '
-        Me.UserName.DataPropertyName = "UserName"
-        resources.ApplyResources(Me.UserName, "UserName")
-        Me.UserName.Name = "UserName"
-        Me.UserName.ReadOnly = True
-        '
-        'UserId
-        '
-        Me.UserId.DataPropertyName = "UserId"
-        resources.ApplyResources(Me.UserId, "UserId")
-        Me.UserId.Name = "UserId"
-        Me.UserId.ReadOnly = True
-        '
-        'UserState
-        '
-        Me.UserState.DataPropertyName = "UserState"
-        resources.ApplyResources(Me.UserState, "UserState")
-        Me.UserState.Name = "UserState"
-        Me.UserState.ReadOnly = True
-        '
-        'PCName
-        '
-        Me.PCName.DataPropertyName = "PCName"
-        resources.ApplyResources(Me.PCName, "PCName")
-        Me.PCName.Name = "PCName"
-        Me.PCName.ReadOnly = True
-        '
-        'colCloseSession
-        '
-        Me.colCloseSession.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.colCloseSession.FillWeight = 97.46193!
-        resources.ApplyResources(Me.colCloseSession, "colCloseSession")
-        Me.colCloseSession.Name = "colCloseSession"
-        Me.colCloseSession.ReadOnly = True
-        Me.colCloseSession.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        '
         'bindingUsers
         '
         Me.bindingUsers.AllowNew = True
@@ -574,6 +514,73 @@ Partial Class frmMain
         '
         resources.ApplyResources(Me.dlgSaveFile, "dlgSaveFile")
         '
+        'colConnect
+        '
+        Me.colConnect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        resources.ApplyResources(Me.colConnect, "colConnect")
+        Me.colConnect.Name = "colConnect"
+        Me.colConnect.ReadOnly = True
+        Me.colConnect.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
+        'TSName
+        '
+        Me.TSName.DataPropertyName = "TSName"
+        Me.TSName.FillWeight = 24.75247!
+        resources.ApplyResources(Me.TSName, "TSName")
+        Me.TSName.Name = "TSName"
+        Me.TSName.ReadOnly = True
+        '
+        'colMessage
+        '
+        Me.colMessage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        resources.ApplyResources(Me.colMessage, "colMessage")
+        Me.colMessage.Name = "colMessage"
+        Me.colMessage.ReadOnly = True
+        Me.colMessage.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
+        'UserName
+        '
+        Me.UserName.DataPropertyName = "UserName"
+        Me.UserName.FillWeight = 24.75247!
+        resources.ApplyResources(Me.UserName, "UserName")
+        Me.UserName.Name = "UserName"
+        Me.UserName.ReadOnly = True
+        '
+        'UserId
+        '
+        Me.UserId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.UserId.DataPropertyName = "UserId"
+        Me.UserId.FillWeight = 400.9901!
+        resources.ApplyResources(Me.UserId, "UserId")
+        Me.UserId.Name = "UserId"
+        Me.UserId.ReadOnly = True
+        Me.UserId.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
+        'UserState
+        '
+        Me.UserState.DataPropertyName = "UserState"
+        Me.UserState.FillWeight = 24.75247!
+        resources.ApplyResources(Me.UserState, "UserState")
+        Me.UserState.Name = "UserState"
+        Me.UserState.ReadOnly = True
+        '
+        'PCName
+        '
+        Me.PCName.DataPropertyName = "PCName"
+        Me.PCName.FillWeight = 24.75247!
+        resources.ApplyResources(Me.PCName, "PCName")
+        Me.PCName.Name = "PCName"
+        Me.PCName.ReadOnly = True
+        '
+        'colCloseSession
+        '
+        Me.colCloseSession.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.colCloseSession.FillWeight = 97.46193!
+        resources.ApplyResources(Me.colCloseSession, "colCloseSession")
+        Me.colCloseSession.Name = "colCloseSession"
+        Me.colCloseSession.ReadOnly = True
+        Me.colCloseSession.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
         'frmMain
         '
         resources.ApplyResources(Me, "$this")
@@ -671,14 +678,14 @@ Partial Class frmMain
     Friend WithEvents dlgOpenFile As OpenFileDialog
     Friend WithEvents ExportServersFileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents dlgSaveFile As SaveFileDialog
-    Friend WithEvents colCloseSession As DataGridViewButtonColumn
-    Friend WithEvents PCName As DataGridViewTextBoxColumn
-    Friend WithEvents UserState As DataGridViewTextBoxColumn
-    Friend WithEvents UserId As DataGridViewTextBoxColumn
-    Friend WithEvents UserName As DataGridViewTextBoxColumn
-    Friend WithEvents colMessage As DataGridViewButtonColumn
-    Friend WithEvents TSName As DataGridViewTextBoxColumn
-    Friend WithEvents colConnect As DataGridViewButtonColumn
     Friend WithEvents panelHowToFilter As Panel
     Friend WithEvents lblHowToFilter As Label
+    Friend WithEvents colConnect As DataGridViewButtonColumn
+    Friend WithEvents TSName As DataGridViewTextBoxColumn
+    Friend WithEvents colMessage As DataGridViewButtonColumn
+    Friend WithEvents UserName As DataGridViewTextBoxColumn
+    Friend WithEvents UserId As DataGridViewTextBoxColumn
+    Friend WithEvents UserState As DataGridViewTextBoxColumn
+    Friend WithEvents PCName As DataGridViewTextBoxColumn
+    Friend WithEvents colCloseSession As DataGridViewButtonColumn
 End Class

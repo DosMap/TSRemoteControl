@@ -651,6 +651,12 @@
   <data name="UserId.HeaderText" xml:space="preserve">
     <value>User ID</value>
   </data>
+  <data name="UserId.MinimumWidth" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="UserId.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
   <data name="UserState.HeaderText" xml:space="preserve">
     <value>Connection state</value>
   </data>
@@ -2371,54 +2377,6 @@
   <data name="&gt;&gt;bindingServersByGroup.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;colConnect.Name" xml:space="preserve">
-    <value>colConnect</value>
-  </data>
-  <data name="&gt;&gt;colConnect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSName.Name" xml:space="preserve">
-    <value>TSName</value>
-  </data>
-  <data name="&gt;&gt;TSName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colMessage.Name" xml:space="preserve">
-    <value>colMessage</value>
-  </data>
-  <data name="&gt;&gt;colMessage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserName.Name" xml:space="preserve">
-    <value>UserName</value>
-  </data>
-  <data name="&gt;&gt;UserName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserId.Name" xml:space="preserve">
-    <value>UserId</value>
-  </data>
-  <data name="&gt;&gt;UserId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserState.Name" xml:space="preserve">
-    <value>UserState</value>
-  </data>
-  <data name="&gt;&gt;UserState.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PCName.Name" xml:space="preserve">
-    <value>PCName</value>
-  </data>
-  <data name="&gt;&gt;PCName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;colCloseSession.Name" xml:space="preserve">
-    <value>colCloseSession</value>
-  </data>
-  <data name="&gt;&gt;colCloseSession.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;bindingUsers.Name" xml:space="preserve">
     <value>bindingUsers</value>
   </data>
@@ -2514,6 +2472,54 @@
   </data>
   <data name="&gt;&gt;dlgSaveFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colConnect.Name" xml:space="preserve">
+    <value>colConnect</value>
+  </data>
+  <data name="&gt;&gt;colConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSName.Name" xml:space="preserve">
+    <value>TSName</value>
+  </data>
+  <data name="&gt;&gt;TSName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colMessage.Name" xml:space="preserve">
+    <value>colMessage</value>
+  </data>
+  <data name="&gt;&gt;colMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserName.Name" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="&gt;&gt;UserName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserId.Name" xml:space="preserve">
+    <value>UserId</value>
+  </data>
+  <data name="&gt;&gt;UserId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserState.Name" xml:space="preserve">
+    <value>UserState</value>
+  </data>
+  <data name="&gt;&gt;UserState.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PCName.Name" xml:space="preserve">
+    <value>PCName</value>
+  </data>
+  <data name="&gt;&gt;PCName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colCloseSession.Name" xml:space="preserve">
+    <value>colCloseSession</value>
+  </data>
+  <data name="&gt;&gt;colCloseSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>
