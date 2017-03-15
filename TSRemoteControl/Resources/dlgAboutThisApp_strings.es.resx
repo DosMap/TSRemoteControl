@@ -127,6 +127,10 @@
     <value>Desarollada por {0}</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Esta aplicación permite controlar remotamente la sesiones de Terminal Server que se ejecutan sobre servidores Windows 2012</value>
+    <value>Esta aplicación permite controlar remotamente la sesiones de Terminal Server que se ejecutan sobre servidores Windows 2012.
+
+Este proyecto utiliza la librería de .NET Cassia. Cassia es una librería para servicios de terminal de Windows que utiliza licencia MIT y que se puede encontrar en https://code.google.com/p/cassia/ o en https://github.com/gunmetal313/cassia
+
+Este proyecto utiliza la librería DataGridView Filter Popup. DataGridView Filter Popup es una librería .NET desarrollada por Vincenzo Rossi que extiende las capacidades del control DataGridView para añadir la capacidad de filtrar las filas. La librería se puede encontrar en https://www.codeproject.com/Articles/33786/DataGridView-Filter-Popup</value>
   </data>
 </root>

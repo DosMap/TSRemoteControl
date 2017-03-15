@@ -83,7 +83,11 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a This application allows to remote control Terminal server sessions running on Windows 2012 servers.
+        '''  Busca una cadena traducida similar a This application allows to remote control Terminal server sessions running on Windows 2012 servers
+        '''
+        '''This project uses the Cassia .NET library. Cassia is a .NET Windows Terminal Services library that uses the MIT License and can be found at https://code.google.com/p/cassia/ or at https://github.com/gunmetal313/cassia
+        '''
+        '''This project uses the DataGridView Filter Popup library. DataGridView Filter Popup is a .NET library developed by Vincenzo Rossi that extents DataGridView capabilities to add row filtering. [resto de la cadena truncado]&quot;;.
         '''</summary>
         Friend Shared ReadOnly Property description() As String
             Get
