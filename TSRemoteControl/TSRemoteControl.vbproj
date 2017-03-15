@@ -189,9 +189,6 @@
     <EmbeddedResource Include="dlgMessage.resx">
       <DependentUpon>dlgMessage.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dlgServerEdit.es-ES.resx">
-      <DependentUpon>dlgServerEdit.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="dlgServerEdit.es.resx">
       <DependentUpon>dlgServerEdit.vb</DependentUpon>
     </EmbeddedResource>
