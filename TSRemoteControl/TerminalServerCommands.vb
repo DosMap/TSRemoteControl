@@ -171,15 +171,20 @@
         Dim manager As Cassia.ITerminalServicesManager = New Cassia.TerminalServicesManager()
         Dim processList As New List(Of ProcessInfo)
 
-        Using server As Cassia.ITerminalServer = manager.GetRemoteServer(tsName)
-            server.Open()
+        Try
+            Using server As Cassia.ITerminalServer = manager.GetRemoteServer(tsName)
+                server.Open()
 
-            Dim procList = server.GetSession(userId).GetProcesses()
-            For Each proc In procList
-                processList.Add(New ProcessInfo(proc.Server.ServerName, proc.SessionId, proc.ProcessId, proc.ProcessName))
-            Next
-            server.Close()
-        End Using
+                Dim procList = server.GetSession(userId).GetProcesses()
+                For Each proc In procList
+                    processList.Add(New ProcessInfo(proc.Server.ServerName, proc.SessionId, proc.ProcessId, proc.ProcessName))
+                Next
+                server.Close()
+            End Using
+
+        Catch ex As Exception
+            MsgBox(My.Resources.GenericStrings.getProcessError, MsgBoxStyle.Exclamation, My.Resources.GenericStrings.errorText)
+        End Try
 
         Return processList
     End Function

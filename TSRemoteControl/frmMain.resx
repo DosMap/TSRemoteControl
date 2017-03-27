@@ -657,6 +657,24 @@
   <data name="UserId.Width" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
+  <metadata name="colTasks.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colTasks.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="colTasks.MinimumWidth" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="colTasks.ToolTipText" xml:space="preserve">
+    <value>View user tasks</value>
+  </data>
+  <data name="colTasks.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colTasks.Width" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
   <data name="UserState.HeaderText" xml:space="preserve">
     <value>Connection state</value>
   </data>
@@ -2502,6 +2520,12 @@
   </data>
   <data name="&gt;&gt;UserId.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colTasks.Name" xml:space="preserve">
+    <value>colTasks</value>
+  </data>
+  <data name="&gt;&gt;colTasks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UserState.Name" xml:space="preserve">
     <value>UserState</value>

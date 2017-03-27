@@ -96,6 +96,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsetUsers.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datasets\dsTasks.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTasks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsTasks.vb">
+      <DependentUpon>dsTasks.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dlgAboutThisApp.Designer.vb">
       <DependentUpon>dlgAboutThisApp.vb</DependentUpon>
     </Compile>
@@ -108,16 +116,32 @@
     <Compile Include="dlgMessage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="dlgTasks.Designer.vb">
+      <DependentUpon>dlgTasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dlgTasks.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProcessInfo.vb" />
     <Compile Include="Resources\dlgAboutThisApp_strings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dlgAboutThisApp_strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\dlgTasks_strings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dlgTasks_strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\frmMain_strings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>frmMain_strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GenericStrings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenericStrings.resx</DependentUpon>
     </Compile>
     <Compile Include="TerminalServerCommands.vb" />
     <Compile Include="Datasets\dsetGroupsAndServers.Designer.vb">
@@ -200,6 +224,9 @@
     <EmbeddedResource Include="dlgServerEdit.resx">
       <DependentUpon>dlgServerEdit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dlgTasks.resx">
+      <DependentUpon>dlgTasks.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.es-ES.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
@@ -227,12 +254,23 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>dlgAboutThisApp_strings.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dlgTasks_strings.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>dlgTasks_strings.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\frmMain_strings.es-ES.resx" />
     <EmbeddedResource Include="Resources\frmMain_strings.es.resx" />
     <EmbeddedResource Include="Resources\frmMain_strings.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>frmMain_strings.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GenericStrings.es-ES.resx" />
+    <EmbeddedResource Include="Resources\GenericStrings.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GenericStrings.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +295,17 @@
     </None>
     <None Include="Datasets\dsetUsers.xss">
       <DependentUpon>dsetUsers.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsTasks.xsc">
+      <DependentUpon>dsTasks.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsTasks.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTasks.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\dsTasks.xss">
+      <DependentUpon>dsTasks.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest">
       <SubType>Designer</SubType>
@@ -309,6 +358,9 @@
     <Content Include="Images\screen.png" />
     <Content Include="Images\screen32.png" />
     <Content Include="Images\screen64.png" />
+    <Content Include="Images\taskManager.png" />
+    <Content Include="Images\taskManager32.png" />
+    <Content Include="Images\taskManager64.png" />
     <Content Include="LICENSE.txt" />
     <Content Include="README.TXT" />
   </ItemGroup>

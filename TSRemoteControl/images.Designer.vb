@@ -333,5 +333,35 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property taskManager() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("taskManager", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property taskManager32() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("taskManager32", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property taskManager64() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("taskManager64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Class
 End Namespace

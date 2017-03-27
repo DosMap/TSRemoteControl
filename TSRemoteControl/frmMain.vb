@@ -13,8 +13,9 @@
     Private Const SERVER_DELETE_CELL As Integer = 6
 
     Private Const USER_CONNECT_CELL As Integer = 0
-    Private Const USER_CLOSE_SESSION As Integer = 7
     Private Const USER_MESSAGE As Integer = 2
+    Private Const USER_TASKS As Integer = 5
+    Private Const USER_CLOSE_SESSION As Integer = 8
 
     Private mUserList As List(Of UserInfo)
 
@@ -206,6 +207,19 @@
             End If
         End If
 
+        If e.ColumnIndex = USER_TASKS Then
+            e.Paint(e.CellBounds, DataGridViewPaintParts.All)
+            Dim img As Image = Nothing
+            If e.RowIndex >= 0 Then
+                img = CType(My.Resources.images.taskManager32, Image)
+            End If
+
+            If Not img Is Nothing Then
+                e.Graphics.DrawImage(img, e.CellBounds.Left + 2, e.CellBounds.Top + 2, e.CellBounds.Width - 5, e.CellBounds.Height - 5)
+                e.Handled = True
+            End If
+        End If
+
         If e.ColumnIndex = USER_CLOSE_SESSION Then
             e.Paint(e.CellBounds, DataGridViewPaintParts.All)
             Dim img As Image = Nothing
@@ -216,10 +230,11 @@
             End If
 
             If Not img Is Nothing Then
-                    e.Graphics.DrawImage(img, e.CellBounds.Left + 10, e.CellBounds.Top + 5, 10, 10)
-                    e.Handled = True
-                End If
+                e.Graphics.DrawImage(img, e.CellBounds.Left + 10, e.CellBounds.Top + 5, 10, 10)
+                e.Handled = True
             End If
+        End If
+
     End Sub
 
     Private Sub dgwUsers_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgwUsers.CellClick
@@ -263,7 +278,11 @@
                         End If
                     End If
                 End Using
-
+            Case USER_TASKS
+                Using dlg As New dlgTasks(dgwUsers.Rows(e.RowIndex).Cells("TSName").Value,
+                                          dgwUsers.Rows(e.RowIndex).Cells("UserId").Value)
+                    dlg.ShowDialog()
+                End Using
         End Select
 
     End Sub

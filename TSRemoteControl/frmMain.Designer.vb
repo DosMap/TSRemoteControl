@@ -85,6 +85,7 @@ Partial Class frmMain
         Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTasks = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
@@ -358,7 +359,7 @@ Partial Class frmMain
         Me.dgwUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgwUsers.BackgroundColor = System.Drawing.Color.White
         Me.dgwUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgwUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colConnect, Me.TSName, Me.colMessage, Me.UserName, Me.UserId, Me.UserState, Me.PCName, Me.colCloseSession})
+        Me.dgwUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colConnect, Me.TSName, Me.colMessage, Me.UserName, Me.UserId, Me.colTasks, Me.UserState, Me.PCName, Me.colCloseSession})
         Me.dgwUsers.DataSource = Me.bindingUsers
         resources.ApplyResources(Me.dgwUsers, "dgwUsers")
         Me.dgwUsers.MultiSelect = False
@@ -556,6 +557,14 @@ Partial Class frmMain
         Me.UserId.ReadOnly = True
         Me.UserId.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'colTasks
+        '
+        Me.colTasks.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        resources.ApplyResources(Me.colTasks, "colTasks")
+        Me.colTasks.Name = "colTasks"
+        Me.colTasks.ReadOnly = True
+        Me.colTasks.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
         'UserState
         '
         Me.UserState.DataPropertyName = "UserState"
@@ -685,6 +694,7 @@ Partial Class frmMain
     Friend WithEvents colMessage As DataGridViewButtonColumn
     Friend WithEvents UserName As DataGridViewTextBoxColumn
     Friend WithEvents UserId As DataGridViewTextBoxColumn
+    Friend WithEvents colTasks As DataGridViewButtonColumn
     Friend WithEvents UserState As DataGridViewTextBoxColumn
     Friend WithEvents PCName As DataGridViewTextBoxColumn
     Friend WithEvents colCloseSession As DataGridViewButtonColumn

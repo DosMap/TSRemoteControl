@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTasks" targetNamespace="http://tempuri.org/dsTasks.xsd" xmlns:mstns="http://tempuri.org/dsTasks.xsd" xmlns="http://tempuri.org/dsTasks.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTasks" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsTasks" msprop:Generator_UserDSName="dsTasks">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tasks" msprop:Generator_TableClassName="tasksDataTable" msprop:Generator_TableVarName="tabletasks" msprop:Generator_TablePropName="tasks" msprop:Generator_RowDeletingName="tasksRowDeleting" msprop:Generator_RowChangingName="tasksRowChanging" msprop:Generator_RowEvHandlerName="tasksRowChangeEventHandler" msprop:Generator_RowDeletedName="tasksRowDeleted" msprop:Generator_UserTableName="tasks" msprop:Generator_RowChangedName="tasksRowChanged" msprop:Generator_RowEvArgName="tasksRowChangeEvent" msprop:Generator_RowClassName="tasksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Server" msprop:Generator_ColumnVarNameInTable="columnServer" msprop:Generator_ColumnPropNameInRow="Server" msprop:Generator_ColumnPropNameInTable="ServerColumn" msprop:Generator_UserColumnName="Server" type="xs:string" minOccurs="0" />
+              <xs:element name="Session" msprop:Generator_ColumnVarNameInTable="columnSession" msprop:Generator_ColumnPropNameInRow="Session" msprop:Generator_ColumnPropNameInTable="SessionColumn" msprop:Generator_UserColumnName="Session" type="xs:string" minOccurs="0" />
+              <xs:element name="ProcessId" msprop:Generator_ColumnVarNameInTable="columnProcessId" msprop:Generator_ColumnPropNameInRow="ProcessId" msprop:Generator_ColumnPropNameInTable="ProcessIdColumn" msprop:Generator_UserColumnName="ProcessId" type="xs:int" minOccurs="0" />
+              <xs:element name="ProcessName" msprop:Generator_ColumnVarNameInTable="columnProcessName" msprop:Generator_ColumnPropNameInRow="ProcessName" msprop:Generator_ColumnPropNameInTable="ProcessNameColumn" msprop:Generator_UserColumnName="ProcessName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
