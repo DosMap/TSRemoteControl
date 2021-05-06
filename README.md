@@ -1,5 +1,5 @@
 # TSRemoteControl
-Terminal Server Remote Control for Windows 2012
+Terminal Server Remote Control for Windows 2012 or later
 
 This project was created to implement a simple application that enables a user to control certain functionalities from a Terminal Server.
 
