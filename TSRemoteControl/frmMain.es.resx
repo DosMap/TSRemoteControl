@@ -1388,4 +1388,16 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Control remoto de sesiones de terminal server</value>
   </data>
+  <data name="colServerEdit.ToolTipText" xml:space="preserve">
+    <value>Editar servidor</value>
+  </data>
+  <data name="colServerDelete.ToolTipText" xml:space="preserve">
+    <value>Eliminar servidor</value>
+  </data>
+  <data name="colTasks.ToolTipText" xml:space="preserve">
+    <value>Ver tareas del usuario</value>
+  </data>
+  <data name="UserId.HeaderText" xml:space="preserve">
+    <value>ID Usuario</value>
+  </data>
 </root>

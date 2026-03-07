@@ -616,4 +616,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Sobre TSRemoteControl</value>
   </data>
+  <data name="LabelProductName.Text" xml:space="preserve">
+    <value>TSRemoteControl</value>
+  </data>
+  <data name="linkToProject.Text" xml:space="preserve">
+    <value>https://github.com/DosMap/TSRemoteControl</value>
+  </data>
 </root>

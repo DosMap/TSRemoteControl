@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Programacion\\TSRemoteControl\\TSRemoteControl\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23A42D5B-5898-4E8C-B78D-BB0A14009D3A}|TSRemoteControl\\TSRemoteControl.vbproj|c:\\programacion\\tsremotecontrol\\tsremotecontrol\\tsremotecontrol\\my project\\assemblyinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{23A42D5B-5898-4E8C-B78D-BB0A14009D3A}|TSRemoteControl\\TSRemoteControl.vbproj|solutionrelative:tsremotecontrol\\my project\\assemblyinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A42D5B-5898-4E8C-B78D-BB0A14009D3A}|TSRemoteControl\\TSRemoteControl.vbproj|c:\\programacion\\tsremotecontrol\\tsremotecontrol\\tsremotecontrol\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{23A42D5B-5898-4E8C-B78D-BB0A14009D3A}|TSRemoteControl\\TSRemoteControl.vbproj|solutionrelative:tsremotecontrol\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AssemblyInfo.vb",
+              "DocumentMoniker": "C:\\Programacion\\TSRemoteControl\\TSRemoteControl\\TSRemoteControl\\My Project\\AssemblyInfo.vb",
+              "RelativeDocumentMoniker": "TSRemoteControl\\My Project\\AssemblyInfo.vb",
+              "ToolTip": "C:\\Programacion\\TSRemoteControl\\TSRemoteControl\\TSRemoteControl\\My Project\\AssemblyInfo.vb",
+              "RelativeToolTip": "TSRemoteControl\\My Project\\AssemblyInfo.vb",
+              "ViewState": "AgIAABEAAAAAAAAAAAAjwCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-07T10:14:31.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Programacion\\TSRemoteControl\\TSRemoteControl\\TSRemoteControl\\App.config",
+              "RelativeDocumentMoniker": "TSRemoteControl\\App.config",
+              "ToolTip": "C:\\Programacion\\TSRemoteControl\\TSRemoteControl\\TSRemoteControl\\App.config",
+              "RelativeToolTip": "TSRemoteControl\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-07T10:14:10.202Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

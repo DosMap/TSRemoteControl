@@ -11,12 +11,28 @@
     <AssemblyName>TSRemoteControl</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -177,6 +193,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -218,6 +235,9 @@
     <EmbeddedResource Include="dlgMessage.resx">
       <DependentUpon>dlgMessage.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dlgServerEdit.es-ES.resx">
+      <DependentUpon>dlgServerEdit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlgServerEdit.es.resx">
       <DependentUpon>dlgServerEdit.vb</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +255,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="images.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -254,6 +275,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>dlgAboutThisApp_strings.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dlgTasks_strings.es-ES.resx" />
+    <EmbeddedResource Include="Resources\dlgTasks_strings.es.resx" />
     <EmbeddedResource Include="Resources\dlgTasks_strings.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
@@ -267,6 +290,7 @@
       <LastGenOutput>frmMain_strings.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\GenericStrings.es-ES.resx" />
+    <EmbeddedResource Include="Resources\GenericStrings.es.resx" />
     <EmbeddedResource Include="Resources\GenericStrings.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
@@ -364,7 +388,18 @@
     <Content Include="LICENSE.txt" />
     <Content Include="README.TXT" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

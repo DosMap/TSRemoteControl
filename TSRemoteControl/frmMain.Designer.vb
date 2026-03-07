@@ -40,19 +40,21 @@ Partial Class frmMain
         Me.btnAddGroup = New System.Windows.Forms.Button()
         Me.bottomLeftPanel = New System.Windows.Forms.Panel()
         Me.dgwServers = New System.Windows.Forms.DataGridView()
-        Me.colGetUsers = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.GroupIdDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ServerIdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ServerNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ServerDisplayNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colServerEdit = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.colServerDelete = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.bindingServersByGroup = New System.Windows.Forms.BindingSource(Me.components)
         Me.panelTopServers = New System.Windows.Forms.Panel()
         Me.lblDetailTS = New System.Windows.Forms.Label()
         Me.btnAddServer = New System.Windows.Forms.Button()
         Me.panelRight = New System.Windows.Forms.Panel()
         Me.dgwUsers = New System.Windows.Forms.DataGridView()
+        Me.colConnect = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TSName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTasks = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.bindingUsers = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsersData = New TSRemoteControl.dsetUsers()
         Me.panelHowToFilter = New System.Windows.Forms.Panel()
@@ -80,15 +82,13 @@ Partial Class frmMain
         Me.bgWorker = New System.ComponentModel.BackgroundWorker()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
         Me.dlgSaveFile = New System.Windows.Forms.SaveFileDialog()
-        Me.colConnect = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.TSName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colMessage = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.UserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UserId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTasks = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.UserState = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PCName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCloseSession = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.colGetUsers = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.GroupIdDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ServerIdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ServerNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ServerDisplayNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colServerEdit = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.colServerDelete = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.contentContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.contentContainer.Panel1.SuspendLayout()
         Me.contentContainer.Panel2.SuspendLayout()
@@ -264,53 +264,6 @@ Partial Class frmMain
         Me.dgwServers.ReadOnly = True
         Me.dgwServers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         '
-        'colGetUsers
-        '
-        resources.ApplyResources(Me.colGetUsers, "colGetUsers")
-        Me.colGetUsers.Name = "colGetUsers"
-        Me.colGetUsers.ReadOnly = True
-        '
-        'GroupIdDataGridViewTextBoxColumn1
-        '
-        Me.GroupIdDataGridViewTextBoxColumn1.DataPropertyName = "groupId"
-        resources.ApplyResources(Me.GroupIdDataGridViewTextBoxColumn1, "GroupIdDataGridViewTextBoxColumn1")
-        Me.GroupIdDataGridViewTextBoxColumn1.Name = "GroupIdDataGridViewTextBoxColumn1"
-        Me.GroupIdDataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'ServerIdDataGridViewTextBoxColumn
-        '
-        Me.ServerIdDataGridViewTextBoxColumn.DataPropertyName = "serverId"
-        resources.ApplyResources(Me.ServerIdDataGridViewTextBoxColumn, "ServerIdDataGridViewTextBoxColumn")
-        Me.ServerIdDataGridViewTextBoxColumn.Name = "ServerIdDataGridViewTextBoxColumn"
-        Me.ServerIdDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ServerNameDataGridViewTextBoxColumn
-        '
-        Me.ServerNameDataGridViewTextBoxColumn.DataPropertyName = "serverName"
-        Me.ServerNameDataGridViewTextBoxColumn.Name = "ServerNameDataGridViewTextBoxColumn"
-        Me.ServerNameDataGridViewTextBoxColumn.ReadOnly = True
-        resources.ApplyResources(Me.ServerNameDataGridViewTextBoxColumn, "ServerNameDataGridViewTextBoxColumn")
-        '
-        'ServerDisplayNameDataGridViewTextBoxColumn
-        '
-        Me.ServerDisplayNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.ServerDisplayNameDataGridViewTextBoxColumn.DataPropertyName = "serverDisplayName"
-        resources.ApplyResources(Me.ServerDisplayNameDataGridViewTextBoxColumn, "ServerDisplayNameDataGridViewTextBoxColumn")
-        Me.ServerDisplayNameDataGridViewTextBoxColumn.Name = "ServerDisplayNameDataGridViewTextBoxColumn"
-        Me.ServerDisplayNameDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'colServerEdit
-        '
-        resources.ApplyResources(Me.colServerEdit, "colServerEdit")
-        Me.colServerEdit.Name = "colServerEdit"
-        Me.colServerEdit.ReadOnly = True
-        '
-        'colServerDelete
-        '
-        resources.ApplyResources(Me.colServerDelete, "colServerDelete")
-        Me.colServerDelete.Name = "colServerDelete"
-        Me.colServerDelete.ReadOnly = True
-        '
         'bindingServersByGroup
         '
         Me.bindingServersByGroup.DataMember = "servers"
@@ -366,154 +319,6 @@ Partial Class frmMain
         Me.dgwUsers.Name = "dgwUsers"
         Me.dgwUsers.ReadOnly = True
         Me.dgwUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        '
-        'bindingUsers
-        '
-        Me.bindingUsers.AllowNew = True
-        Me.bindingUsers.DataMember = "Users"
-        Me.bindingUsers.DataSource = Me.UsersData
-        '
-        'UsersData
-        '
-        Me.UsersData.DataSetName = "dsetUsers"
-        Me.UsersData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'panelHowToFilter
-        '
-        Me.panelHowToFilter.Controls.Add(Me.lblHowToFilter)
-        resources.ApplyResources(Me.panelHowToFilter, "panelHowToFilter")
-        Me.panelHowToFilter.Name = "panelHowToFilter"
-        '
-        'lblHowToFilter
-        '
-        resources.ApplyResources(Me.lblHowToFilter, "lblHowToFilter")
-        Me.lblHowToFilter.Name = "lblHowToFilter"
-        '
-        'panelUsersTop
-        '
-        Me.panelUsersTop.Controls.Add(Me.txtFilter)
-        Me.panelUsersTop.Controls.Add(Me.lblUserFilter)
-        resources.ApplyResources(Me.panelUsersTop, "panelUsersTop")
-        Me.panelUsersTop.Name = "panelUsersTop"
-        '
-        'txtFilter
-        '
-        resources.ApplyResources(Me.txtFilter, "txtFilter")
-        Me.txtFilter.Name = "txtFilter"
-        '
-        'lblUserFilter
-        '
-        resources.ApplyResources(Me.lblUserFilter, "lblUserFilter")
-        Me.lblUserFilter.Name = "lblUserFilter"
-        '
-        'userStatusStrip
-        '
-        Me.userStatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.userStatusLabel, Me.userRefreshProgessBar, Me.userRefreshCancelButton})
-        resources.ApplyResources(Me.userStatusStrip, "userStatusStrip")
-        Me.userStatusStrip.Name = "userStatusStrip"
-        '
-        'userStatusLabel
-        '
-        resources.ApplyResources(Me.userStatusLabel, "userStatusLabel")
-        Me.userStatusLabel.Name = "userStatusLabel"
-        '
-        'userRefreshProgessBar
-        '
-        Me.userRefreshProgessBar.Name = "userRefreshProgessBar"
-        resources.ApplyResources(Me.userRefreshProgessBar, "userRefreshProgessBar")
-        '
-        'userRefreshCancelButton
-        '
-        Me.userRefreshCancelButton.IsLink = True
-        Me.userRefreshCancelButton.Name = "userRefreshCancelButton"
-        resources.ApplyResources(Me.userRefreshCancelButton, "userRefreshCancelButton")
-        '
-        'panelRightTop
-        '
-        resources.ApplyResources(Me.panelRightTop, "panelRightTop")
-        Me.panelRightTop.Controls.Add(Me.lblUsersPerServer)
-        Me.panelRightTop.Controls.Add(Me.btnRefresh)
-        Me.panelRightTop.Name = "panelRightTop"
-        '
-        'lblUsersPerServer
-        '
-        Me.lblUsersPerServer.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.lblUsersPerServer, "lblUsersPerServer")
-        Me.lblUsersPerServer.ForeColor = System.Drawing.Color.White
-        Me.lblUsersPerServer.Name = "lblUsersPerServer"
-        '
-        'btnRefresh
-        '
-        Me.btnRefresh.BackgroundImage = Global.TSRemoteControl.My.Resources.images.refresh32
-        resources.ApplyResources(Me.btnRefresh, "btnRefresh")
-        Me.btnRefresh.Name = "btnRefresh"
-        Me.toolTipsManager.SetToolTip(Me.btnRefresh, resources.GetString("btnRefresh.ToolTip"))
-        Me.btnRefresh.UseVisualStyleBackColor = True
-        '
-        'listUsers
-        '
-        resources.ApplyResources(Me.listUsers, "listUsers")
-        Me.listUsers.Name = "listUsers"
-        Me.listUsers.UseCompatibleStateImageBehavior = False
-        '
-        'toolTipsManager
-        '
-        Me.toolTipsManager.IsBalloon = True
-        '
-        'TheMenuStrip
-        '
-        Me.TheMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
-        resources.ApplyResources(Me.TheMenuStrip, "TheMenuStrip")
-        Me.TheMenuStrip.Name = "TheMenuStrip"
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportServersFileToolStripMenuItem, Me.ExportServersFileToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        resources.ApplyResources(Me.FileToolStripMenuItem, "FileToolStripMenuItem")
-        '
-        'ImportServersFileToolStripMenuItem
-        '
-        Me.ImportServersFileToolStripMenuItem.Name = "ImportServersFileToolStripMenuItem"
-        resources.ApplyResources(Me.ImportServersFileToolStripMenuItem, "ImportServersFileToolStripMenuItem")
-        '
-        'ExportServersFileToolStripMenuItem
-        '
-        Me.ExportServersFileToolStripMenuItem.Name = "ExportServersFileToolStripMenuItem"
-        resources.ApplyResources(Me.ExportServersFileToolStripMenuItem, "ExportServersFileToolStripMenuItem")
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutThisApplicationToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        resources.ApplyResources(Me.HelpToolStripMenuItem, "HelpToolStripMenuItem")
-        '
-        'AboutThisApplicationToolStripMenuItem
-        '
-        Me.AboutThisApplicationToolStripMenuItem.Name = "AboutThisApplicationToolStripMenuItem"
-        resources.ApplyResources(Me.AboutThisApplicationToolStripMenuItem, "AboutThisApplicationToolStripMenuItem")
-        '
-        'timerUserRefresh
-        '
-        Me.timerUserRefresh.Interval = 60000
-        '
-        'bgWorker
-        '
-        Me.bgWorker.WorkerReportsProgress = True
-        Me.bgWorker.WorkerSupportsCancellation = True
-        '
-        'dlgOpenFile
-        '
-        resources.ApplyResources(Me.dlgOpenFile, "dlgOpenFile")
-        '
-        'dlgSaveFile
-        '
-        resources.ApplyResources(Me.dlgSaveFile, "dlgSaveFile")
         '
         'colConnect
         '
@@ -589,6 +394,205 @@ Partial Class frmMain
         Me.colCloseSession.Name = "colCloseSession"
         Me.colCloseSession.ReadOnly = True
         Me.colCloseSession.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
+        'bindingUsers
+        '
+        Me.bindingUsers.AllowNew = True
+        Me.bindingUsers.DataMember = "Users"
+        Me.bindingUsers.DataSource = Me.UsersData
+        '
+        'UsersData
+        '
+        Me.UsersData.DataSetName = "dsetUsers"
+        Me.UsersData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'panelHowToFilter
+        '
+        Me.panelHowToFilter.Controls.Add(Me.lblHowToFilter)
+        resources.ApplyResources(Me.panelHowToFilter, "panelHowToFilter")
+        Me.panelHowToFilter.Name = "panelHowToFilter"
+        '
+        'lblHowToFilter
+        '
+        resources.ApplyResources(Me.lblHowToFilter, "lblHowToFilter")
+        Me.lblHowToFilter.Name = "lblHowToFilter"
+        '
+        'panelUsersTop
+        '
+        Me.panelUsersTop.Controls.Add(Me.txtFilter)
+        Me.panelUsersTop.Controls.Add(Me.lblUserFilter)
+        resources.ApplyResources(Me.panelUsersTop, "panelUsersTop")
+        Me.panelUsersTop.Name = "panelUsersTop"
+        '
+        'txtFilter
+        '
+        resources.ApplyResources(Me.txtFilter, "txtFilter")
+        Me.txtFilter.Name = "txtFilter"
+        '
+        'lblUserFilter
+        '
+        resources.ApplyResources(Me.lblUserFilter, "lblUserFilter")
+        Me.lblUserFilter.Name = "lblUserFilter"
+        '
+        'userStatusStrip
+        '
+        Me.userStatusStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.userStatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.userStatusLabel, Me.userRefreshProgessBar, Me.userRefreshCancelButton})
+        resources.ApplyResources(Me.userStatusStrip, "userStatusStrip")
+        Me.userStatusStrip.Name = "userStatusStrip"
+        '
+        'userStatusLabel
+        '
+        resources.ApplyResources(Me.userStatusLabel, "userStatusLabel")
+        Me.userStatusLabel.Name = "userStatusLabel"
+        '
+        'userRefreshProgessBar
+        '
+        Me.userRefreshProgessBar.Name = "userRefreshProgessBar"
+        resources.ApplyResources(Me.userRefreshProgessBar, "userRefreshProgessBar")
+        '
+        'userRefreshCancelButton
+        '
+        Me.userRefreshCancelButton.IsLink = True
+        Me.userRefreshCancelButton.Name = "userRefreshCancelButton"
+        resources.ApplyResources(Me.userRefreshCancelButton, "userRefreshCancelButton")
+        '
+        'panelRightTop
+        '
+        resources.ApplyResources(Me.panelRightTop, "panelRightTop")
+        Me.panelRightTop.Controls.Add(Me.lblUsersPerServer)
+        Me.panelRightTop.Controls.Add(Me.btnRefresh)
+        Me.panelRightTop.Name = "panelRightTop"
+        '
+        'lblUsersPerServer
+        '
+        Me.lblUsersPerServer.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.lblUsersPerServer, "lblUsersPerServer")
+        Me.lblUsersPerServer.ForeColor = System.Drawing.Color.White
+        Me.lblUsersPerServer.Name = "lblUsersPerServer"
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.BackgroundImage = Global.TSRemoteControl.My.Resources.images.refresh32
+        resources.ApplyResources(Me.btnRefresh, "btnRefresh")
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.toolTipsManager.SetToolTip(Me.btnRefresh, resources.GetString("btnRefresh.ToolTip"))
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
+        'listUsers
+        '
+        resources.ApplyResources(Me.listUsers, "listUsers")
+        Me.listUsers.HideSelection = False
+        Me.listUsers.Name = "listUsers"
+        Me.listUsers.UseCompatibleStateImageBehavior = False
+        '
+        'toolTipsManager
+        '
+        Me.toolTipsManager.IsBalloon = True
+        '
+        'TheMenuStrip
+        '
+        Me.TheMenuStrip.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
+        Me.TheMenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.TheMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
+        resources.ApplyResources(Me.TheMenuStrip, "TheMenuStrip")
+        Me.TheMenuStrip.Name = "TheMenuStrip"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportServersFileToolStripMenuItem, Me.ExportServersFileToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        resources.ApplyResources(Me.FileToolStripMenuItem, "FileToolStripMenuItem")
+        '
+        'ImportServersFileToolStripMenuItem
+        '
+        Me.ImportServersFileToolStripMenuItem.Name = "ImportServersFileToolStripMenuItem"
+        resources.ApplyResources(Me.ImportServersFileToolStripMenuItem, "ImportServersFileToolStripMenuItem")
+        '
+        'ExportServersFileToolStripMenuItem
+        '
+        Me.ExportServersFileToolStripMenuItem.Name = "ExportServersFileToolStripMenuItem"
+        resources.ApplyResources(Me.ExportServersFileToolStripMenuItem, "ExportServersFileToolStripMenuItem")
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutThisApplicationToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        resources.ApplyResources(Me.HelpToolStripMenuItem, "HelpToolStripMenuItem")
+        '
+        'AboutThisApplicationToolStripMenuItem
+        '
+        Me.AboutThisApplicationToolStripMenuItem.Name = "AboutThisApplicationToolStripMenuItem"
+        resources.ApplyResources(Me.AboutThisApplicationToolStripMenuItem, "AboutThisApplicationToolStripMenuItem")
+        '
+        'timerUserRefresh
+        '
+        Me.timerUserRefresh.Interval = 60000
+        '
+        'bgWorker
+        '
+        Me.bgWorker.WorkerReportsProgress = True
+        Me.bgWorker.WorkerSupportsCancellation = True
+        '
+        'dlgOpenFile
+        '
+        resources.ApplyResources(Me.dlgOpenFile, "dlgOpenFile")
+        '
+        'dlgSaveFile
+        '
+        resources.ApplyResources(Me.dlgSaveFile, "dlgSaveFile")
+        '
+        'colGetUsers
+        '
+        resources.ApplyResources(Me.colGetUsers, "colGetUsers")
+        Me.colGetUsers.Name = "colGetUsers"
+        Me.colGetUsers.ReadOnly = True
+        '
+        'GroupIdDataGridViewTextBoxColumn1
+        '
+        Me.GroupIdDataGridViewTextBoxColumn1.DataPropertyName = "groupId"
+        resources.ApplyResources(Me.GroupIdDataGridViewTextBoxColumn1, "GroupIdDataGridViewTextBoxColumn1")
+        Me.GroupIdDataGridViewTextBoxColumn1.Name = "GroupIdDataGridViewTextBoxColumn1"
+        Me.GroupIdDataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'ServerIdDataGridViewTextBoxColumn
+        '
+        Me.ServerIdDataGridViewTextBoxColumn.DataPropertyName = "serverId"
+        resources.ApplyResources(Me.ServerIdDataGridViewTextBoxColumn, "ServerIdDataGridViewTextBoxColumn")
+        Me.ServerIdDataGridViewTextBoxColumn.Name = "ServerIdDataGridViewTextBoxColumn"
+        Me.ServerIdDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ServerNameDataGridViewTextBoxColumn
+        '
+        Me.ServerNameDataGridViewTextBoxColumn.DataPropertyName = "serverName"
+        resources.ApplyResources(Me.ServerNameDataGridViewTextBoxColumn, "ServerNameDataGridViewTextBoxColumn")
+        Me.ServerNameDataGridViewTextBoxColumn.Name = "ServerNameDataGridViewTextBoxColumn"
+        Me.ServerNameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ServerDisplayNameDataGridViewTextBoxColumn
+        '
+        Me.ServerDisplayNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ServerDisplayNameDataGridViewTextBoxColumn.DataPropertyName = "serverDisplayName"
+        resources.ApplyResources(Me.ServerDisplayNameDataGridViewTextBoxColumn, "ServerDisplayNameDataGridViewTextBoxColumn")
+        Me.ServerDisplayNameDataGridViewTextBoxColumn.Name = "ServerDisplayNameDataGridViewTextBoxColumn"
+        Me.ServerDisplayNameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'colServerEdit
+        '
+        resources.ApplyResources(Me.colServerEdit, "colServerEdit")
+        Me.colServerEdit.Name = "colServerEdit"
+        Me.colServerEdit.ReadOnly = True
+        '
+        'colServerDelete
+        '
+        resources.ApplyResources(Me.colServerDelete, "colServerDelete")
+        Me.colServerDelete.Name = "colServerDelete"
+        Me.colServerDelete.ReadOnly = True
         '
         'frmMain
         '
@@ -667,13 +671,6 @@ Partial Class frmMain
     Friend WithEvents userStatusLabel As ToolStripStatusLabel
     Friend WithEvents userRefreshProgessBar As ToolStripProgressBar
     Friend WithEvents userRefreshCancelButton As ToolStripStatusLabel
-    Friend WithEvents colGetUsers As DataGridViewButtonColumn
-    Friend WithEvents GroupIdDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents ServerIdDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ServerNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ServerDisplayNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents colServerEdit As DataGridViewButtonColumn
-    Friend WithEvents colServerDelete As DataGridViewButtonColumn
     Friend WithEvents bindingUsers As BindingSource
     Friend WithEvents panelUsersTop As Panel
     Friend WithEvents txtFilter As TextBox
@@ -698,4 +695,11 @@ Partial Class frmMain
     Friend WithEvents UserState As DataGridViewTextBoxColumn
     Friend WithEvents PCName As DataGridViewTextBoxColumn
     Friend WithEvents colCloseSession As DataGridViewButtonColumn
+    Friend WithEvents colGetUsers As DataGridViewButtonColumn
+    Friend WithEvents GroupIdDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents ServerIdDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ServerNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ServerDisplayNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents colServerEdit As DataGridViewButtonColumn
+    Friend WithEvents colServerDelete As DataGridViewButtonColumn
 End Class
